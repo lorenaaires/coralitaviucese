@@ -432,3 +432,8 @@
 .section-images{
     padding-bottom: 0;
 }
+@media(max-width:1207px){
+    .hidden-xs{
+        display: none;
+    }
+}
