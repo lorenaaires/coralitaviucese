@@ -1,0 +1,44 @@
+﻿<div data-ng-controller="myControllerContatti">
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="title">I Nostri Contatti</h2>
+                    <div class="form-group" data-ng-init="getContatti()">
+
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="text-primary bold col-md-3 text-left">Indirizzo:</span><span class="col-md-9 text-right">{{infoCoro.indirizzoCoro}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="text-primary bold col-md-3 text-left">C.F.</span> <span class="col-md-9 text-right">{{infoCoro.codiceFiscaleCoro}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="text-primary bold col-md-3 text-left">Telefono:</span> <span class="col-md-9 text-right">{{infoCoro.telefonoDirettore}}</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="text-primary bold col-md-3 text-left">Presidente: </span><span class="col-md-9 text-right">{{infoCoro.nomePresidente}} <label class="text-primary cursor">{{infoCoro.emailPresidente}}</label></span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="text-primary bold col-md-3 text-left">Direttore:</span><span class="col-md-9 text-right">{{infoCoro.nomeDirettore}} <label class="text-primary cursor">{{infoCoro.emailPresidente}}</label></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="separator separator-primary"></div>
+    <div class="section section-about-us">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-md-12 text-center title">Mappa</h2>
+                <div class="col-md-8 offset-md-2 text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1725.3871804504895!2d7.373429477645699!3d45.23840476974545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47885070292dd81b%3A0x196f1bb2f53fa470!2s10070+Viu&#39;+TO!5e1!3m2!1sit!2sit!4v1499522044704" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

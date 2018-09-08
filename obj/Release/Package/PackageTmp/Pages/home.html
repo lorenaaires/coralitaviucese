@@ -1,0 +1,185 @@
+﻿
+<div class="section section-about-us" data-ng-controller="myControllerHome">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="title">Chi Siamo</h2>
+                <h5 class="description">Il coro a quattro voci miste Coralità Viucese nasce nel 1997 e si costituisce ufficialmente nell’anno 2000. Fin dalla sua nascita è diretto da Vittorio Guerci. Il suo repertorio comprende canti popolari e di montagna, brani natalizi, musica sacra, polifonica e contemporanea.</h5>
+            </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image-container image-left" style="margin-bottom: -225px">
+                        <!-- First image on the left side -->
+                        <img src="img/big/gruppo2016-big.jpg" alt="La coralità" class="img-fluid rounded img-raised" />
+                       
+                    </div>
+                    <!-- Second image on the left side of the article -->
+                    <div class="image-container">
+                        <img src="img/big/gruppo2013-big.jpg" alt="La coralità" class="img-fluid rounded img-raised" />
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- First image on the right side, above the article -->
+                    <div class="image-container image-right">
+                        <img src="img/big/gruppo2015-big.jpg" alt="La coralità" class="img-fluid rounded img-raised" />
+                    </div>
+                    <h3 class="title" style="margin-top: 190px">I Prossimi Concerti</h3>
+
+                    <ul class="list-group col-md-12">
+                        <li class="list-group-item  col-md-12" data-ng-repeat="c in concerti" style="padding: 5px;">
+                            <i class="fa fa-calendar col-xs-1 col-md-1" data-toggle="tooltip" title="{{c.data_inizio| date:'dd-MM-yyyy'}} {{c.quandoDescrizione}}"></i>
+                            <span class="col-xs-4 col-md-4">
+                                <span class="col-md-12">{{c.data_inizio| date:'dd-MM-yyyy'}}</span>
+                                <span class="col-md-12"> {{c.quandoDescrizione}}</span>
+                            </span>
+                            <span class="col-xs-6 col-md-6">{{c.luogo_uscita}} - {{c.dettagli_uscita}}</span>
+                            <a ng-href="{{c.indirizzoFileVolantini}}" class="col-xs-1 col-md-1"><i class="fa fa-download"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+            <div class="row">
+
+                <div class="col-md-12    text-center">
+
+                    <h2 class="title">Il Nostro CD</h2>
+                    <a href="mailto:migliorero.silvia@gmail.com">
+                        <h5 class="description">Richiedi il Nostro CD <i>Specchio</i></h5>
+                        <div class="text-center col-md-12">
+                            <img src="img/Cor_Viuc.jpg" class="img-thumbnail img-raised" />
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="section section-team text-center ">
+    <div class="container">
+        <h2 class="title">I Nostri Consigli</h2>
+        <div class="team">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/comune_viu.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised" />
+                        <h4 class="title">Comune di Viù</h4>
+                        <p class="description">
+
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-instagram"></i></a>
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/cai_viu.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">CAI - Sottosezione Valle di Viù</h4>
+
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/ProLocoViu.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Pro Loco Viù</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/chanticleer.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Chanticleer: An Orchestra of Voices</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/king_singers2.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">The King's Singers</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/tenebrae.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Tenebrae Choir</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/coro_da_camera_di_torino.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Coro da Camera di Torino</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/COROLARUPE.GIF" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Coro La Rupe</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/viva_voce.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Coro Viva Voce Donnas</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/7_torri.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Sette Torri</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/licabella.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Associazione Corale Licabella</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-player">
+                        <img src="img/link/logo-banca-generali2.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                        <h4 class="title">Banca Generali</h4>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-google-plus"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#pablo" class="btn btn-primary btn-icon btn-icon-mini"><i class="fa fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

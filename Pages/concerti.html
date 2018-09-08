@@ -1,0 +1,31 @@
+﻿<div class="section section-about-us" data-ng-controller="myControllerConcerti">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="title">I Concerti</h2>
+                <div class="form-group">
+                    <div class="col-md-12" style="margin:20px 0">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <select class="form-control" data-ng-model="yearSelected" data-ng-change="getConcerti()">
+                                <option data-ng-repeat="anno in years" value="{{anno}}">{{anno}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <ul class="list-group" data-ng-init="getConcerti()">
+                        <li class="list-group-item" data-ng-repeat="concerto in this.concerti|orderBy:'-data_inizio'">
+                            <span class="col-md-2">{{concerto.luogo_uscita}}</span>
+                            <span class="col-md-2">{{concerto.data_inizio | date:'dd-MM-yyyy'}} {{concerto.quandoDescrizione}}</span>
+                            <span class="col-md-6">{{concerto.dettagli_uscita}}</span>
+                            <a class="col-md-2" ng-href="{{concerto.indirizzoFileVolantini}}"><i class="fa fa-download"></i>locandina</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="separator separator-primary"></div>-->
+    </div>
+</div>

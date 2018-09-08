@@ -1,0 +1,342 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif, Arial;
+	font-size: 10pt;
+	/*background: url("../img/sfondo.jpg") #112f65 no-repeat top center; 
+	color: #31405d;
+	line-height: 17px;*/
+}
+table, tr, td, label, input, textarea, select {
+	font-family: Tahoma, Geneva, sans-serif, Arial;
+	font-size: 10pt;
+}
+label, input, textarea, select {
+	padding: 3px;
+}
+img {
+	border: none;
+}
+a, a:active {
+	outline: medium none;
+	text-decoration: none;
+	color: #66C;
+	opacity: 1;
+}
+a:hover, a.attivo {
+	color: #C63;
+	opacity: 0.8;
+}
+p {
+	text-align: justify;
+}
+
+h1 {
+	font-size: 26pt;
+	color: #fff;
+	font-weight:normal;
+}
+
+h2 {
+	padding: 0; 
+	margin: 0;
+	color: #DF8D18;
+	font-size: 11pt;
+}
+h3 {
+	padding: 0; 
+	margin: 10px 0 5px 0;
+	font-size: 10pt;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a.attivo {
+	text-decoration: underline;
+}
+
+#wrapper {
+    position: relative;
+	/*margin: 10px auto;
+	width: 820px;*/
+	height: auto;
+	border: none; 
+	clear: both;
+	text-align: left;
+}
+#logo {
+	margin: 30px 0 20px 0;
+}
+#menu {
+	position: relative;
+	width: 820px; 
+	height: 49px; 
+	display: block;
+	margin: 30px 0 0 0;
+	background: url("../img/sfondo_menu.png") no-repeat left top;
+	z-index: 10;
+}
+ul#nav {
+	position: relative;
+	padding: 0;
+	text-transform: lowercase;
+}
+ul#nav li {
+	font-size: 10pt;
+	list-style: none;
+	margin: 15px 7px 0 20px;
+	display: inline;
+	float: left;
+}
+ul#nav li.facebook {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+ul#nav li a {
+	color: #fff;
+}
+ul#nav li a:hover {
+	color: #69F;
+}
+/* MENU PRINCIPALE */
+#id_home .menu_home, 
+#id_storia .menu_storia,
+#id_concerti .menu_concerti, 
+#id_repertorio .menu_repertorio,
+#id_foto .menu_foto,
+#id_audio .menu_audio,
+#id_video .menu_video,
+#id_link .menu_link,
+#id_download .menu_download,
+#id_contatti .menu_contatti{
+	color: #69F;
+}
+#header {
+	position: relative;
+	width: 820px;
+	height: 196px;
+	display: block;
+	background: url("../img/header.png") no-repeat left top;
+}
+
+#content {
+	position: relative;
+	background: url("../img/sfondo_content.jpg") repeat-y left top;
+	/*width: 780px;*/
+	padding: 20px;
+	margin: 0;
+	top: 0;*/
+	display: block;
+	min-height: 400px;
+}
+#cont_left {
+	position: relative;
+	width: 250px; 
+	display: block;
+	border-right: 1px solid #CCC;
+	padding: 0 20px 0 0;
+	float: left;
+	z-index: 3;
+}
+#cont_right {
+	position: relative;
+	display: block;
+	padding: 0 0 0 290px;
+	left: 0;
+	top: 10px;
+	z-index: 2;
+}
+#box_news {
+	position: relative;
+}
+#box_news ul {
+	padding: 0;
+	margin: 0;
+}
+#box_news ul li {
+	list-style: none;
+	padding: 10px 10px 10px 0;
+	border-bottom: 1px solid #CCC;
+}
+#box_news img {
+	padding: 0 10px 5px 0;
+}
+.testo_news {
+	position: absolute;
+	top: 20px;
+	left: 80px;
+	padding: 0 20px 0 0;
+}
+#box_concerti {
+	position: relative;
+	border-bottom: 1px solid #CCC;
+	padding: 10px 10px 10px 0;
+}
+#box_concerti ul {
+	padding: 0;
+	margin: 0;
+}
+#box_concerti ul li {
+	position: relative;
+	list-style: none;
+	padding: 10px 0 0 0;
+	margin: 0 0 7px 0;
+}
+.box_data {
+	background: url("../img/sfondo_data.png") no-repeat left top;
+	width: 48px;
+	height: 48px;
+	display: block;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	font-size: 10pt;
+	line-height: 16px;
+}
+.giorno_data {
+	font-size: 12pt;
+	padding: 6px 0 0 0;
+}
+.testo_conterto {
+	position: absolute;
+	top: 7px;
+	left: 58px;
+	font-size: 9pt;
+	text-align: justify;
+}
+#mod_img {
+	text-align: right;
+	padding: 10px 0;
+}
+
+/*HOME*/
+#gallery_home {
+	display: block;
+	width: 436px;
+	height: 64px;
+	background: url("../img/gallery_footer.png") no-repeat left top;
+}
+#news_home {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+	width: 470px;
+}
+#news_home li {
+	position: relative;
+	list-style: none;
+	padding: 10px 0 5px 0;
+	border-bottom: 1px #666 dotted;
+}
+/*STORIA*/
+.cont_storia {
+	text-align: justify;
+}
+.cont_storia img {
+	padding: 0 0 10px 10px;
+}
+/*REPERTORIO*/
+#ul_repertorio {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 480px;
+}
+#ul_repertorio li {
+	position: relative;
+	list-style: none;
+	padding: 10px 0 5px 0;
+	border-bottom: 1px #666 dotted;
+}
+#ul_repertorio li:hover {
+	background-color: #CCC;s
+}
+.li_right {
+	position: absolute;
+	right: 0;
+}
+/*FOTO*/
+#foto_gruppo {
+	width: 381px;
+}
+/*AUDIO*/
+.img-cd {
+	float: left;
+	padding: 0 10px 5px 0;
+}
+/*LINK*/
+#box_link {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    min-height: 400px;
+	float: left;
+	text-align: left;
+	width: 484px;
+}
+ul#box_link li {
+    width: 130px;
+    height: 155px;
+	float: left;
+    display: inline-block;
+    box-shadow: 0 2px 3px #666666;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 7px;
+    margin: 8px;
+	font-size: 8pt;
+    behavior: url(PIE.htc); /* questo sempre per ultimo! */
+}
+#box_link li img {
+	width: 130px;
+	height: 130px;
+}
+
+#footer {
+	position: relative;
+	width: 820px;
+	height: 44px;
+	display: block;
+	background: url("../img/sfondo_footer.png") no-repeat top center;
+	text-align: left;
+	padding: 25px 0 0 0; 
+	color: #fff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+#box_footer {
+	position: absolute;
+	bottom: 7px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+a#link_login {
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	display: block;
+	width: 30px;
+	padding: 10px 0 10px 10px;
+	font-size: 16pt;
+	opacity: 0;
+}
+a#link_login:hover {
+	text-decoration: none;
+	color: #66C;
+	opacity: 1;
+}
+
+/*AUDIO*/
+/* 
+ -------------------------------------------------------------
+ In-page demo CSS - see external CSS for actual relevant stuff.
+ --------------------------------------------------------------
+ */
+#soundmanager-debug {
+ /* SM2 debug container (optional, makes debug more useable) */
+ position:absolute;position:fixed;*position:absolute;bottom:10px;right:10px;width:50em;height:18em;overflow:auto;background:#fff;margin:1em;padding:1em;border:1px solid #999;font-family:"lucida console",verdana,tahoma,"sans serif";font-size:x-small;line-height:1.5em;opacity:0.9;filter:alpha(opacity=90);
+}

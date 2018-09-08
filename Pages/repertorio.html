@@ -1,0 +1,29 @@
+﻿<div class="section section-about-us"  data-ng-controller="myControllerRepertorio">
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="title">Il Repertorio</h2>
+                <div class="form-group">
+                    <div class="col-md-12" style="margin:20px 0">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+                            <select class="form-control" data-ng-model="tipologiaSelected">
+                                <option data-ng-repeat="tipo in this.tipologie" value="{{tipo.id_gruppo_repertorio}}">
+                                {{tipo.descrizione_gruppo}}
+                                </option>
+                            </select>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item" data-ng-repeat="brano in brani|filter:{Gruppo_id:tipologiaSelected}">
+                            {{brano.Titolo}}
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
