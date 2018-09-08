@@ -80,7 +80,7 @@
     <!-- End Navbar -->
     <div class="wrapper">
         <div class="page-header page-header-small">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('img/gruppo2017_2.png');">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('img/gruppo2017_2_light.png');">
             </div>
             <div class="container">
                 <div class="content-center">
