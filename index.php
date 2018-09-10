@@ -67,6 +67,12 @@
                             <p class="hidden-lg-up">Facebook</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/user/CoralitaViucese" target="_blank" data-original-title="Seguici su youtube">
+                            <i class="fa fa-youtube-square"></i>
+                            <p class="hidden-lg-up">Youtube</p>
+                        </a>
+                    </li>
                     <!--<li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://plus.google.com/114794848750602559773" target="_blank" data-original-title="Follow us on Google+">
                             <i class="fa fa-google-plus"></i>
@@ -94,7 +100,7 @@
         <div data-ng-if="pageSelected=='REPERTORIO'" ng-include="'Pages/repertorio.html'"></div>
         <div data-ng-if="pageSelected=='CONCERTI'" ng-include="'Pages/concerti.html'"></div>
         <div data-ng-if="pageSelected=='CONTATTI'" ng-include="'Pages/contatti.html'"></div>
-        <div data-ng-controller="MyController" data-ng-if="pageSelected=='FOTO'" ng-include="'Pages/foto.html'"></div>
+        <div data-ng-controller="MyController" data-ng-if="pageSelected=='MEDIA'" ng-include="'Pages/foto.html'"></div>
         <div data-ng-controller="MyController" data-ng-if="pageSelected=='MANAGE'" ng-include="'Pages/manageContent.php'"></div>
 
         <footer class="footer footer-default">

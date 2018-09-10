@@ -14,7 +14,7 @@ angular.module('my-app').controller('MyController', MyController);
 function MyController($log, $scope, $filter, globalService, store, $compile, $location, $window, $anchorScroll, $http) {
 
     //$scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'FOTO', 'AUDIO', 'VIDEO'];
-    $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'FOTO'];
+    $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'MEDIA'];
     $scope.fotoCoro = [
         { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
         { url: 'img/big/gruppo2016-big.jpg', descrizione: '2016' },
