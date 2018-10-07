@@ -263,26 +263,32 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                    <label class="control-label col-md-4">Quando</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" data-ng-model="newConcerto.quandoDescrizione" placeholder="Orario concerto" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
                                     <label class="control-label col-md-4">Dettagli</label>
                                     <div class="col-md-8">
                                         <textarea class="form-control" placeholder="Dettagli uscita" data-ng-model="newConcerto.dettagli_uscita" rows="5"></textarea>
                                         <!--<input type="text" class="form-control" data-ng-model="newConcerto.dettagli_uscita" placeholder="username" />-->
                                     </div>
                                 </div>
-                                <div class="form-group row">
+                                <!--<div class="form-group row">
                                     <label class="control-label col-md-4">Locandina</label>
                                     <div class="col-md-8">
                                         <input type="file" id="file3" name="file" multiple="multiple" onchange="angular.element(this).scope().getTheDoc(this.files)" class="form-control"/>
                                     </div>
-                                </div>
+                                </div>-->
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
-                    <!--<button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="salvaConcerto(newConcerto)">Salva</button>-->
-                    <button type="button"  class="btn btn-primary" data-dismiss="modal" >Salva</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-ng-click="salvaConcerto(newConcerto)">Salva</button>
+                    <!--<button type="button"  class="btn btn-primary" data-dismiss="modal" >Salva</button>-->
                 </div>
             </div>
         </div>

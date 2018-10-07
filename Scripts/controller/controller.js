@@ -1,4 +1,4 @@
-﻿var myApp = angular.module('my-app', ['angular-storage', 'angular.filter','ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+﻿var myApp = angular.module('my-app', ['angular-storage', 'angular.filter','ngAnimate', 'ngSanitize', 'ui.bootstrap','ngFilters']);
 
 angular.module('my-app').service('globalService', function (store) {
     if (store.get('userConnected') == undefined) store.set('userConnected', '');

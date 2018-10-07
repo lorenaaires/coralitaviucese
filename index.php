@@ -27,6 +27,7 @@
     <script src="Scripts/angular-sanitize.js"></script>
     <script src="Scripts/ui-bootstrap-tpls-2.5.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+    <script src="Scripts/angular-filter.js"></script>
     <script src="Scripts/controller/controller.js"></script>
     <script src="Scripts/controller/controller.concerti.js"></script>
     <script src="Scripts/controller/controller.contatti.js"></script>

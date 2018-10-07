@@ -7,9 +7,9 @@
 
         $scope.concerti = [];
         $scope.connectedUser = null;
-        $scope.yearSelected = (new Date()).getFullYear().toString();
+        $scope.yearSelected = ((new Date()).getFullYear()).toString();
         $scope.years = [];
-        for (var i = $scope.yearSelected; i >= 1999; i--) {
+        for (var i = ((new Date()).getFullYear()+2); i >= 1999; i--) {
             $scope.years.push(i);
         }
        

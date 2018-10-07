@@ -139,26 +139,14 @@
         ('00' + concerto.data_fine.getUTCMinutes()).slice(-2) + ':' +
         ('00' + concerto.data_fine.getUTCSeconds()).slice(-2);
 
-      $.ajax({
-        url: "api/Values/SaveConcerto.php",
-        type: "POST",
-        contentType: 'multipart/form-data; boundary=MultipartBoundry',
-        cache: false,
-        processData: false,
-        data: ({
-          //concerto: concerto,
-          locandina: $scope.fd
-        }),
-
-        success: function (data) {
-          $scope.getConcerti();
+      $.post( "api/Values/SaveConcerto.php",{
+          concerto: concerto
+          //locandina: $scope.fd
         },
-        error: function (jqXHR, textStatus, errorThrown) {
-          console.log(textStatus, errorThrown);
-          console.log(jqXHR.responseText);
-        },
-        dataType: "json"
-      });
+      function(response,status){
+                $scope.getConcerti();
+        console.log(response,status);
+      },"json");
 
 
     }
