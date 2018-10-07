@@ -26,6 +26,9 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
 
     $scope.changePage = function (pagina) {
         $scope.pageSelected = pagina;
+        $('html').removeClass('nav-open');
+            $toggle = $('.navbar-toggler');
+                           $toggle.removeClass('toggled');
 
     }
     $scope.connectedUser = globalService.getUser();
