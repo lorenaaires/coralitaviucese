@@ -44,14 +44,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-toggleable-md bg-primary fixed-top navbar-transparent" color-on-scroll="500">
         <div class="container">
-            <a class="navbar-brand cursor" style="color:white"  data-ng-hide="connectedUser==null" data-ng-click="changePage('MANAGE')">
+            <a class="navbar-brand cursor" style="color:white" data-ng-hide="connectedUser==null" data-ng-click="changePage('MANAGE')">
                 <p><i class="fa fa-user-circle cursor"></i> <span class="cursor">&nbsp;&nbsp; &nbsp;
-                    Benvenuto {{connectedUser.nickname}}</span></p>
+                        Benvenuto {{connectedUser.nickname}}</span></p>
             </a>
-            <a class="navbar-brand cursor" style="color:white"  data-ng-hide="connectedUser==null" data-ng-click="logout()">           
-            <span>
-                Logout <i class="fa fa-arrow-right"></i>
-            </span>
+            <a class="navbar-brand cursor" style="color:white" data-ng-hide="connectedUser==null" data-ng-click="logout()">
+                <span>
+                    Logout <i class="fa fa-arrow-right"></i>
+                </span>
             </a>
             <div class="navbar-translate">
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +62,7 @@
 
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="css/now-ui-kit-v1.0.1/assets/img/blurred-image-1.jpg">
+
                 <ul class="navbar-nav" data-ng-init="changePage('HOME')">
 
                     <li class="nav-item " data-ng-repeat="pagina in arrayPages" data-ng-click="changePage(pagina)" data-ng-class="{'active':pageSelected==pagina}">
@@ -85,16 +86,16 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header page-header-small"  data-ng-if="pageSelected!='MANAGE'">
+        <div class="page-header page-header-small" data-ng-if="pageSelected!='MANAGE'">
             <div class="page-header-image" data-parallax="true" style="background-image: url('img/gruppo2017_2_light.png');">
             </div>
             <div class="container">
                 <div class="content-center">
-                    <h1 class="title">Coralità Viucese</h1>
+                    <!--<h1 class="title">Coralità Viucese</h1>-->
                 </div>
             </div>
         </div>
-        <div class="page-header page-header-small"  data-ng-if="pageSelected=='MANAGE'" style="height: 80px;">
+        <div class="page-header page-header-small" data-ng-if="pageSelected=='MANAGE'" style="height: 80px;">
             <div class="page-header-image" data-parallax="true" style="background-color:#2a3b90">
             </div>
         </div>
@@ -108,16 +109,17 @@
         <div data-ng-controller="MyController" data-ng-if="pageSelected=='MANAGE'" ng-include="'Pages/manageContent.php'"></div>
 
         <footer class="footer footer-default">
-            <span class="lock-hidden pull-left cursor" data-toggle="modal" data-target="#modalLogin"><i class="fa fa-lock cursor"></i></span>
+            <span class="lock-hidden pull-left cursor" data-toggle="modal" data-target="#modalLogin">
+                <i class="fa fa-lock cursor"></i></span>
             <div class="container">
                 <div class="copyright">
                     &copy;
-                   
+
                     <script>
                         document.write(new Date().getFullYear())
                     </script>
                     Coralità Viucese
-               
+
                 </div>
             </div>
         </footer>
@@ -144,7 +146,7 @@
                             <div class="form-group row">
                                 <label class="control-label col-md-4">Password</label>
                                 <div class="col-md-8">
-                                    <input type="password" name="password"  class="form-control" data-ng-model="tempUser.password" placeholder="password" />
+                                    <input type="password" name="password" class="form-control" data-ng-model="tempUser.password" placeholder="password" />
                                 </div>
                             </div>
                         </div>
@@ -170,8 +172,8 @@
 <script src="css/now-ui-kit-v1.0.1/assets/js/now-ui-kit.js" type="text/javascript"></script>
 <script src="Scripts/angular-locale_it.js" type="text/javascript"></script>
 
-      
-    
+
+
 
 </html>
 <style>
@@ -181,7 +183,7 @@
         margin-left: 20px;
     }
 
-        .lock-hidden :hover {
-            color: #8c8c8c;
-        }
+    .lock-hidden :hover {
+        color: #8c8c8c;
+    }
 </style>

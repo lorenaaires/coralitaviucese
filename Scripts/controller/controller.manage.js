@@ -1,9 +1,9 @@
 ﻿(function () {
   angular.module('my-app').controller('myControllerManage', myControllerManage);
 
-  function myControllerManage($log, $scope, $filter, $timeout, 
-  $compile, $location, $window, $anchorScroll, $http, 
-  $rootScope, globalService) {
+  function myControllerManage($log, $scope, $filter, $timeout,
+    $compile, $location, $window, $anchorScroll, $http,
+    $rootScope, globalService) {
 
     $scope.connectedUser = JSON.parse(localStorage.getItem('userConnected'));
     $scope.concerti = [];
@@ -12,17 +12,17 @@
     $scope.hideConcerti = true;
 
     $scope.tipologiaSelected = 'Canti Popolari e di montagna';
-    $('input[name="dates"]').daterangepicker({      
+    $('input[name="dates"]').daterangepicker({
       locale: {
         format: 'DD/MM/YYYY'
       }
-    }, 
-    function(start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      $scope.newConcerto.data_inizio = start.format('YYYY-MM-DD');
-      $scope.newConcerto.data_fine = end.format('YYYY-MM-DD');
+    },
+      function (start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+        $scope.newConcerto.data_inizio = start.format('YYYY-MM-DD');
+        $scope.newConcerto.data_fine = end.format('YYYY-MM-DD');
       });
-     
+
 
     $scope.getContatti = function () {
 
@@ -91,10 +91,10 @@
       $scope.years.push(i);
     }
     $scope.getConcerti = function (yearSelected) {
-      if(!yearSelected){
-        if($scope.yearSelected){
-          yearSelected=$scope.yearSelected;
-        }else{
+      if (!yearSelected) {
+        if ($scope.yearSelected) {
+          yearSelected = $scope.yearSelected;
+        } else {
           yearSelected = (new Date()).getFullYear().toString();
         }
       }
@@ -111,7 +111,7 @@
           for (var i = 0; i < $scope.concerti.length; i++) {
             $scope.concerti[i].data_inizio = new Date($scope.concerti[i].data_inizio);
           }
-          
+
           $scope.$apply();
 
         },
@@ -124,7 +124,7 @@
     }
 
     $scope.salvaConcerto = function (concerto) {
-      
+
       concerto.data_inizio = new Date(concerto.data_inizio);
       concerto.data_fine = new Date(concerto.data_fine);
 
@@ -141,42 +141,42 @@
         ('00' + concerto.data_fine.getUTCHours()).slice(-2) + ':' +
         ('00' + concerto.data_fine.getUTCMinutes()).slice(-2) + ':' +
         ('00' + concerto.data_fine.getUTCSeconds()).slice(-2);
-        debugger      
-        let count = 0;
-        $scope.fd.forEach(function(data){count++});
-        console.log(count);
-        if(count>0){
-          jQuery.ajax({
-              url: 'api/Values/Upload.php',
-              data: $scope.fd,
-              cache: false,
-              contentType: false,
-              processData: false,
-              method: 'POST',
-              type: 'POST', // For jQuery < 1.9
-              success: function(data){
-                concerto.indirizzoFileVolantini = '/Doc_Volantini/' + data;
-                $scope.updateConcerto(concerto);
-                  //alert(data);
-                  $scope.getConcerti();
-                  console.log(data); 
-              }
-          });
-        }else{
-          $scope.updateConcerto(concerto);
-          $scope.getConcerti();
-        }
+      debugger
+      let count = 0;
+      $scope.fd.forEach(function (data) { count++ });
+      console.log(count);
+      if (count > 0) {
+        jQuery.ajax({
+          url: 'api/Values/Upload.php',
+          data: $scope.fd,
+          cache: false,
+          contentType: false,
+          processData: false,
+          method: 'POST',
+          type: 'POST', // For jQuery < 1.9
+          success: function (data) {
+            concerto.indirizzoFileVolantini = '/Doc_Volantini/' + data;
+            $scope.updateConcerto(concerto);
+            //alert(data);
+            $scope.getConcerti();
+            console.log(data);
+          }
+        });
+      } else {
+        $scope.updateConcerto(concerto);
+        $scope.getConcerti();
+      }
 
 
     }
-    $scope.updateConcerto = function(concerto) { 
-      $.post( "api/Values/SaveConcerto.php",{
-          concerto: concerto
-        },
-        function(response,status){
-            $scope.getConcerti();
-            console.log(response,status);
-      },'json');
+    $scope.updateConcerto = function (concerto) {
+      $.post("api/Values/SaveConcerto.php", {
+        concerto: concerto
+      },
+        function (response, status) {
+          $scope.getConcerti();
+          console.log(response, status);
+        }, 'json');
 
     }
     $scope.getConcerti();
@@ -184,37 +184,40 @@
       $scope.selectedConcerto = concerto;
       $scope.selectedConcerto.data_inizio = new Date($scope.selectedConcerto.data_inizio);
       $scope.selectedConcerto.data_fine = new Date($scope.selectedConcerto.data_fine);
-    $('input[name="dates"]').daterangepicker({ 
-      locale: {
-        format: 'DD/MM/YYYY'
+      $('input[name="dates"]').daterangepicker({
+        locale: {
+          format: 'DD/MM/YYYY'
+        },
+        startDate: $scope.selectedConcerto.data_inizio,
+        endDate: $scope.selectedConcerto.data_fine,
       },
-      startDate: $scope.selectedConcerto.data_inizio,
-      endDate: $scope.selectedConcerto.data_fine,
-    }, 
-    function(start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-      $scope.selectedConcerto.data_inizio = start.format('YYYY-MM-DD');
-      $scope.selectedConcerto.data_fine = end.format('YYYY-MM-DD');
+        function (start, end, label) {
+          console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+          $scope.selectedConcerto.data_inizio = start.format('YYYY-MM-DD');
+          $scope.selectedConcerto.data_fine = end.format('YYYY-MM-DD');
+        });
+      $('#modalModConcerto').modal({
+        backdrop: 'static',
+        keyboard: false
       });
-      $('#modalModConcerto').modal('show');
     }
     $scope.salvaBrani = function () {
-      $.post( "api/Values/SaveBrani.php",{
-          brani: $scope.brani
-        },
-        function(response,status){
-            $scope.getBrani();
-          if(response==1){
+      $.post("api/Values/SaveBrani.php", {
+        brani: $scope.brani
+      },
+        function (response, status) {
+          $scope.getBrani();
+          if (response == 1) {
             alert("Salvataggio avvenuto con successo");
           }
-            console.log(response,status);
-      },'json');
+          console.log(response, status);
+        }, 'json');
     }
 
     $scope.fd = new FormData();
 
     $scope.getTheDoc = function (files) {
-      
+
       $scope.fd = new FormData();
       //Take the first selected file
       $scope.fd.append("file", files[0]);
@@ -239,29 +242,46 @@
     }
     $scope.modalAddConcerto = function () {
       $scope.initEmptyConcerto();
-      $('#modalAddConcerto').modal('show');
+      $('#modalAddConcerto').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
     }
     $scope.changedDateStart = function (newDateStart) {
       $scope.selectedConcerto.data_inizio = newDateStart;
       $scope.$apply();
     }
-    $scope.savingConttatti=false;
-    $scope.salvaContatti=function(){
-      debugger
-      $scope.savingConttatti=true;
-      $.post( "api/Values/SaveContatti.php",{
-          infoCoro: $scope.infoCoro
-        },
-        function(response,status){
-          $scope.savingConttatti=false;
+    $scope.savingConttatti = false;
+    $scope.salvaContatti = function () {
+      $scope.savingConttatti = true;
+      $.post("api/Values/SaveContatti.php", {
+        infoCoro: $scope.infoCoro
+      },
+        function (response, status) {
+          $scope.savingConttatti = false;
           $scope.getContatti();
-          if(response==1){
+          if (response == 1) {
             alert("Salvataggio avvenuto con successo");
           }
-          console.log(response,status);
-      },'json');
+          console.log(response, status);
+        }, 'json');
     }
-
+    $scope.confirmDeleteConcerto = function (concerto) {
+      $scope.selectedConcerto = concerto;
+      $('#modalConfirmDeleteConcerto').modal('show');
+    }
+    $scope.deleteConcerto = function (concerto) {
+      $.post("api/Values/DeleteConcerto.php", {
+        concerto: concerto
+      },
+        function (response, status) {
+          $scope.getConcerti();
+          if (response == 1) {
+            alert("Salvataggio avvenuto con successo");
+          }
+          console.log(response, status);
+        }, 'json');
+    }
   }
 
 })();
