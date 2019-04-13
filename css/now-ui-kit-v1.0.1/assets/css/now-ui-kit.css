@@ -2482,10 +2482,10 @@ body {
     }
 
 .nav-pills .nav-item .nav-link {
-    padding: 0 15.5px;
+    /*padding: 0 15.5px;
     text-align: center;
     height: 60px;
-    width: 60px;
+    width: 60px;*/
     font-weight: 400;
     color: #9A9A9A;
     margin-right: 19px;
@@ -2498,9 +2498,8 @@ body {
     }
 
     .nav-pills .nav-item .nav-link.active, .nav-pills .nav-item .nav-link.active:focus, .nav-pills .nav-item .nav-link.active:hover {
-        background-color: #9A9A9A;
+        background-color: #0275d8;
         color: #FFFFFF;
-        box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
     }
 
     .nav-pills .nav-item .nav-link.disabled, .nav-pills .nav-item .nav-link:disabled, .nav-pills .nav-item .nav-link[disabled] {

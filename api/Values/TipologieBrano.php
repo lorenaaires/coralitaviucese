@@ -13,6 +13,7 @@ function utf8ize($d) {
 
 require 'ConnectionVar.php';
 $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
+mysqli_set_charset($connessione, "utf8");
 
 
 $sql = "SELECT * FROM gruppo_Repertorio ";

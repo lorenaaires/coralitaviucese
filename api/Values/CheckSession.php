@@ -13,7 +13,7 @@ function utf8ize($d) {
 
 require 'ConnectionVar.php';
 $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
-session_start();
+    mysqli_set_charset($connessione, "utf8");
 if(isset($_POST["auth_key"]) ){
     $auth_key =$_POST["auth_key"];   
     $username = $_POST["username"];

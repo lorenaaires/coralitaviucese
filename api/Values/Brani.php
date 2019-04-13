@@ -16,6 +16,7 @@ function utf8ize($d) {
 //$dbname = "Sql1049322_2";
 require 'ConnectionVar.php';
 $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
+    mysqli_set_charset($connessione, "utf8");
 
 
 $sql = "SELECT * FROM Repertorio";

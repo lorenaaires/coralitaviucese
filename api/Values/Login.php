@@ -9,17 +9,18 @@ function utf8ize($d) {
     }
     return $d;
 }
+/*
 function is_session_started () {
     return function_exists ( 'session_status' ) ? ( PHP_SESSION_ACTIVE == session_status () ) : ( ! empty ( session_id () ) ); 
-}
+}*/
 //$host="89.46.111.34";$user = "Sql1049322";$password="f76075174z";$dbname = "Sql1049322_2";
 function getAuthKey(){
     return bin2hex(openssl_random_pseudo_bytes(64));
 }
 require 'ConnectionVar.php';
 $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
+mysqli_set_charset($connessione, "utf8");
 
-session_start();
 $username = $_POST["username"];
 
 $password = $_POST["password"];
@@ -44,4 +45,5 @@ if($result != false)
 $connessione->close();
 	
 echo json_encode(utf8ize($array));
+// echo json_encode(utf8ize($sql));
 ?>

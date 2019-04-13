@@ -2,7 +2,7 @@
 <html lang="en" ng-app="my-app">
 
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="../css/now-ui-kit-v1.0.1/assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -34,6 +34,10 @@
     <script src="Scripts/controller/controller.home.js"></script>
     <script src="Scripts/controller/controller.manage.js"></script>
     <script src="Scripts/controller/controller.repertorio.js"></script>
+    <script src="css/now-ui-kit-v1.0.1/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./Scripts/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="./Scripts/daterangepicker/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Scripts/daterangepicker/daterangepicker.css" />
 </head>
 
 <body class="landing-page" data-ng-controller="MyController">
@@ -41,7 +45,8 @@
     <nav class="navbar navbar-toggleable-md bg-primary fixed-top navbar-transparent" color-on-scroll="500">
         <div class="container">
             <a class="navbar-brand cursor" style="color:white"  data-ng-hide="connectedUser==null" data-ng-click="changePage('MANAGE')">
-                <p><i class="fa fa-user-circle cursor"></i> <span class="cursor">&nbsp;&nbsp; &nbsp;Benvenuto {{connectedUser.nickname}}</span></p>
+                <p><i class="fa fa-user-circle cursor"></i> <span class="cursor">&nbsp;&nbsp; &nbsp;
+                    Benvenuto {{connectedUser.nickname}}</span></p>
             </a>
             <a class="navbar-brand cursor" style="color:white"  data-ng-hide="connectedUser==null" data-ng-click="logout()">           
             <span>
@@ -74,25 +79,23 @@
                             <p class="hidden-lg-up">Youtube</p>
                         </a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://plus.google.com/114794848750602559773" target="_blank" data-original-title="Follow us on Google+">
-                            <i class="fa fa-google-plus"></i>
-                            <p class="hidden-lg-up">Google+</p>
-                        </a>
-                    </li>-->
                 </ul>
             </div>
         </div>
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header page-header-small">
+        <div class="page-header page-header-small"  data-ng-if="pageSelected!='MANAGE'">
             <div class="page-header-image" data-parallax="true" style="background-image: url('img/gruppo2017_2_light.png');">
             </div>
             <div class="container">
                 <div class="content-center">
                     <h1 class="title">Coralità Viucese</h1>
                 </div>
+            </div>
+        </div>
+        <div class="page-header page-header-small"  data-ng-if="pageSelected=='MANAGE'" style="height: 80px;">
+            <div class="page-header-image" data-parallax="true" style="background-color:#2a3b90">
             </div>
         </div>
 
@@ -135,13 +138,13 @@
                             <div class="form-group row">
                                 <label class="control-label col-md-4">Username</label>
                                 <div class="col-md-8">
-                                    <input type="text" class="form-control" data-ng-model="tempUser.nickname" placeholder="username" />
+                                    <input type="text" name="username" class="form-control" data-ng-model="tempUser.nickname" placeholder="username" />
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label class="control-label col-md-4">Password</label>
                                 <div class="col-md-8">
-                                    <input type="password" class="form-control" data-ng-model="tempUser.password" placeholder="password" />
+                                    <input type="password" name="password"  class="form-control" data-ng-model="tempUser.password" placeholder="password" />
                                 </div>
                             </div>
                         </div>
@@ -155,7 +158,6 @@
         </div>
 </body>
 <!--   Core JS Files   -->
-<script src="css/now-ui-kit-v1.0.1/assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
 <script src="css/now-ui-kit-v1.0.1/assets/js/core/tether.min.js" type="text/javascript"></script>
 <script src="css/now-ui-kit-v1.0.1/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->

@@ -2,9 +2,6 @@
     angular.module('my-app').controller('myControllerHome', myControllerHome);
 
     function myControllerHome($log, $scope, $filter, $timeout, $compile, $location, $window, $anchorScroll, $http, $rootScope) {
-        $scope.greeting = 'Hola!';
-        console.log($scope.greeting,"home");
-
         $scope.concerti = [];
         $scope.connectedUser = null;
         $scope.getConcerti = function () {
@@ -19,7 +16,6 @@
                 },*/
                 success:function(data){
                     $scope.concerti = data;
-                    console.log($scope.concerti);
                     for(var i=0;i<$scope.concerti.length;i++){
                          $scope.concerti[i].data_inizio = new Date($scope.concerti[i].data_inizio);
                     }
