@@ -11,9 +11,10 @@
                 url:"api/Values/InfoSito.php",
                 type:"POST",
                 success:function(data){
+                    
                     $scope.infoCoro = data[0];
                     $scope.$apply();
-
+                    
                 },
                  error: function(jqXHR, textStatus, errorThrown) {
                        console.log(textStatus, errorThrown);

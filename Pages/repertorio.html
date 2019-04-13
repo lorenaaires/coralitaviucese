@@ -17,8 +17,8 @@
                     </div>
                     <ul class="list-group">
                         <li class="list-group-item" data-ng-repeat="brano in brani|filter:{Gruppo_id:tipologiaSelected}">
-                            {{brano.Titolo}}
-
+                            <div class="col-md-6 col-sm-12">{{brano.Titolo}}</div>
+                            <div class="col-md-6 col-sm-12 text-primary text-capitalize">{{brano.Armonizzazione}}</div>
                         </li>
                     </ul>
                 </div>
