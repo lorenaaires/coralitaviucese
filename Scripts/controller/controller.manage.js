@@ -141,7 +141,7 @@
         ('00' + concerto.data_fine.getUTCHours()).slice(-2) + ':' +
         ('00' + concerto.data_fine.getUTCMinutes()).slice(-2) + ':' +
         ('00' + concerto.data_fine.getUTCSeconds()).slice(-2);
-      debugger
+      
       let count = 0;
       $scope.fd.forEach(function (data) { count++ });
       console.log(count);

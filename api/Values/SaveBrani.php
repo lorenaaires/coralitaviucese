@@ -9,7 +9,7 @@
     
     for($i=0;$i<$arrayLength;$i++){
         $brani = $braniarray[$i];
-        $sql = "UPDATE Repertorio SET Titolo = '".$brani["Titolo"]."', Armonizzazione = '".$brani["Armonizzazione"]."' WHERE id_canti = ".$brani["id_canti"] ;
+        $sql = "UPDATE Repertorio SET Titolo = '".$connessione->real_escape_string($brani["Titolo"])."', Armonizzazione = '".$connessione->real_escape_string($brani["Armonizzazione"])."' WHERE id_canti = ".$connessione->real_escape_string($brani["id_canti"]) ;
         
         $result = mysqli_query($connessione, $sql);
     }

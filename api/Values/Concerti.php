@@ -6,7 +6,6 @@ mysqli_set_charset($connessione, "utf8");
 
 $sql = "";
 $anno = $_POST["anno"];
-//echo $anno;
 
 if($anno!="home"){
     $sql = "SELECT * FROM registroUscite where YEAR(data_inizio)=".$anno;

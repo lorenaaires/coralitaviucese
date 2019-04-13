@@ -1,7 +1,7 @@
 ﻿<div class="section section-about-us" data-ng-controller="myControllerConcerti">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-2 text-center">
+            <div class="col-md-12 text-center">
                 <h2 class="title">I Concerti</h2>
                 <div class="form-group">
                     <div class="col-md-12" style="margin:20px 0">
@@ -14,15 +14,23 @@
                         </div>
                         <div class="col-md-3"></div>
                     </div>
-                    <ul class="list-group" data-ng-init="getConcerti()">
-                        <li class="list-group-item" data-ng-repeat="concerto in this.concerti|orderBy:'-data_inizio'">
-                            <span class="col-md-2">{{concerto.luogo_uscita}}</span>
-                            <span class="col-md-2">{{concerto.data_inizio | date:'dd-MM-yyyy'}} {{concerto.quandoDescrizione}}</span>
-                            <span class="col-md-6">{{concerto.dettagli_uscita}}</span>
-                            <a class="col-md-2"  target="_blank" ng-href="{{concerto.indirizzoFileVolantini}}"><i class="fa fa-download"></i>locandina</a>
-
-                        </li>
-                    </ul>
+                    <div class="row col-md-12 pull-right">
+                        <div class="col-md-6 col-lg-4" data-ng-repeat="concerto in this.concerti|orderBy:'-data_inizio'">
+                            <div class="card mr-4 p-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{concerto.luogo_uscita}}</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">
+                                        {{concerto.data_inizio | date:'dd-MM-yyyy'}}
+                                        {{concerto.quandoDescrizione}}
+                                    </h6>
+                                    <p class="card-text">{{concerto.dettagli_uscita}}</p>
+                                    <a target="_blank" ng-href="{{concerto.indirizzoFileVolantini}}" class="card-link"
+                                        ng-if="concerto.indirizzoFileVolantini">Locandina</a>
+                                    <!--<a href="#" class="card-link">Another link</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
