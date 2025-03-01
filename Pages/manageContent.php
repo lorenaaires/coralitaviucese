@@ -106,7 +106,7 @@
                                     <li class="list-group-item cursor" data-ng-repeat="brano in brani|filter:{Gruppo_id:tipologiaSelected}">
                                         <input type="text" class="input form-control" data-ng-model="brano.Titolo" />
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item" ng-click="addBranoEmpty()">
                                         <i class="fa fa-plus"></i> &nbsp; Aggiungi Brano
                                     </li>
                                 </ul>

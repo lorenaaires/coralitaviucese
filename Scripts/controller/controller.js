@@ -21,6 +21,13 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     //$scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'FOTO', 'AUDIO', 'VIDEO'];
     $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'MEDIA'];
     $scope.fotoCoro = [
+        { url: 'img/big/gruppo_2024_2.JPG', descrizione: '2024 - Teramo' },
+        { url: 'img/big/gruppo_2024_3.JPG', descrizione: '2024 - Parma' },
+        { url: 'img/big/gruppo_2024_4.JPG', descrizione: '2024 - Parma' },
+        { url: 'img/big/gruppo_2024_5.JPG', descrizione: '2024 - Parma' },
+        { url: 'img/big/gruppo_2024.JPG', descrizione: '2024 - San Marino' },
+        { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
+        { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
         { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
         { url: 'img/big/gruppo2016-big.jpg', descrizione: '2016' },
         { url: 'img/big/gruppo2015-big.jpg', descrizione: '2015' },

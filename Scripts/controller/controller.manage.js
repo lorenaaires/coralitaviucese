@@ -81,6 +81,13 @@
         dataType: "json"
       });
     }
+    $scope.addBranoEmpty = function(){
+      $scope.brani.push({
+        Gruppo_id:$scope.tipologiaSelected.Gruppo_id,
+        Titolo:""
+      });
+    }
+
     $scope.changeTipologia = function (tipologia) {
       $scope.tipologiaSelected = tipologia;
     }

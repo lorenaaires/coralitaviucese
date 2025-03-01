@@ -16,8 +16,8 @@
     <link href="css/now-ui-kit-v1.0.1/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/now-ui-kit-v1.0.1/assets/css/now-ui-kit.css" rel="stylesheet" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link href="css/now-ui-kit-v1.0.1/assets/css/demo.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project 
+    <link href="css/now-ui-kit-v1.0.1/assets/css/demo.css" rel="stylesheet" />-->
 
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-route.js"></script>
@@ -87,7 +87,7 @@
     <!-- End Navbar -->
     <div class="wrapper">
         <div class="page-header page-header-small" data-ng-if="pageSelected!='MANAGE'">
-            <div class="page-header-image" data-parallax="true" style="background-image: url('img/gruppo2017_2_light.png');">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('img/newPhoto/mini_magick20240826-24825-1xtwoby.jpg');">
             </div>
             <div class="container">
                 <div class="content-center">
