@@ -1,37 +1,26 @@
-<?php 	
-require 'ConnectionVar.php';
+<?php
 
-$connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
-mysqli_set_charset($connessione, "utf8");
+require_once 'JsonStorage.php';
 
-$sql = "";
-$anno = $_POST["anno"];
+$concerti = json_storage_read('concerti.json', array());
+$anno = isset($_POST['anno']) ? $_POST['anno'] : date('Y');
 
-if($anno!="home"){
-    $sql = "SELECT * FROM registroUscite where YEAR(data_inizio)=".$anno;
-    $array = array();
-    $result = mysqli_query($connessione, $sql);
-    if($result != false)
-        while($var = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-            array_push($array, $var);
-        }
+usort($concerti, function ($left, $right) {
+    return strcmp($right['data_fine'], $left['data_fine']);
+});
 
-    $connessione->close();
-    echo json_encode($array);
-}else{
-    $sql = "SELECT * FROM registroUscite order by data_fine desc  LIMIT 3";
-    $array = array();
-    $result = mysqli_query($connessione, $sql);
-    if($result != false){
-        while($var = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-            array_push($array, $var);
-        }
-    }
-    $connessione->close();
-    echo json_encode($array);
+if ($anno === 'home') {
+    json_storage_output(array_slice($concerti, 0, 3));
+    exit;
 }
 
+$concertiFiltrati = array_values(array_filter($concerti, function ($concerto) use ($anno) {
+    if (!isset($concerto['data_inizio'])) {
+        return false;
+    }
 
+    return substr($concerto['data_inizio'], 0, 4) === strval($anno);
+}));
 
-	
+json_storage_output($concertiFiltrati);
 ?>

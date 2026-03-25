@@ -1,14 +1,19 @@
 <?php
-require 'ConnectionVar.php';
-$connessione = mysqli_connect($host, $user, $password, $dbname) or die("errore di connessione");
-mysqli_set_charset($connessione, "utf8");
 
-$concerto = $_POST["concerto"];
+require_once 'JsonStorage.php';
 
-$sql = "DELETE FROM registroUscite WHERE id_uscita=" . $concerto["id_uscita"];
+$concerto = json_storage_get_post_array('concerto');
+if ($concerto === null || !isset($concerto['id_uscita'])) {
+    json_storage_output(0);
+    exit;
+}
 
+$concerti = json_storage_read('concerti.json', array());
+$idDaEliminare = intval($concerto['id_uscita']);
 
-$result = mysqli_query($connessione, $sql);
+$concertiFiltrati = array_values(array_filter($concerti, function ($item) use ($idDaEliminare) {
+    return !isset($item['id_uscita']) || intval($item['id_uscita']) !== $idDaEliminare;
+}));
 
-$connessione->close();
-echo $result;
+$result = json_storage_write('concerti.json', $concertiFiltrati);
+json_storage_output($result ? 1 : 0);

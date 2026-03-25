@@ -11,7 +11,7 @@
     $scope.hideRepertorio = true;
     $scope.hideConcerti = true;
 
-    $scope.tipologiaSelected = 'Canti Popolari e di montagna';
+    $scope.tipologiaSelected = null;
     $('input[name="dates"]').daterangepicker({
       locale: {
         format: 'DD/MM/YYYY'
@@ -52,6 +52,9 @@
         type: "POST",
         success: function (data) {
           $scope.tipologie = data;
+          if ($scope.tipologie.length > 0 && !$scope.tipologiaSelected) {
+            $scope.tipologiaSelected = $scope.tipologie[0].id_gruppo_repertorio;
+          }
           $scope.$apply();
 
         },
@@ -70,7 +73,9 @@
 
         success: function (data) {
           $scope.brani = data;
-          $scope.tipologiaSelected = $scope.brani[0].Gruppo_id.toString();
+          if (!$scope.tipologiaSelected && $scope.tipologie && $scope.tipologie.length > 0) {
+            $scope.tipologiaSelected = $scope.tipologie[0].id_gruppo_repertorio;
+          }
           $scope.$apply();
 
         },
@@ -83,8 +88,9 @@
     }
     $scope.addBranoEmpty = function(){
       $scope.brani.push({
-        Gruppo_id:$scope.tipologiaSelected.Gruppo_id,
-        Titolo:""
+        Gruppo_id:$scope.tipologiaSelected,
+        Titolo:"",
+        Armonizzazione:""
       });
     }
 

@@ -1,0 +1,22 @@
+[
+    {
+        "id_gruppo_repertorio": 2,
+        "descrizione_gruppo": "POLIFONIA CLASSICA/RELIGIOSA",
+        "ordine_gruppo": 1
+    },
+    {
+        "id_gruppo_repertorio": 3,
+        "descrizione_gruppo": "POLIFONIA MODERNA",
+        "ordine_gruppo": 2
+    },
+    {
+        "id_gruppo_repertorio": 4,
+        "descrizione_gruppo": "BRANI NATALIZI",
+        "ordine_gruppo": 3
+    },
+    {
+        "id_gruppo_repertorio": 1,
+        "descrizione_gruppo": "CANTI POPOLARI/DI MONTAGNA/SPIRITUAL",
+        "ordine_gruppo": 4
+    }
+]

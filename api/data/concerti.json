@@ -1,0 +1,1460 @@
+[
+    {
+        "id_uscita": 144,
+        "data_inizio": "2008-06-21 00:00:00",
+        "data_fine": "2008-06-21 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Rassegna Corale Estiva organizzata dalla Coralità Viucese. Cori Ospiti: CORO VIVAVOCE di Donnas, CORO MINIMO di Burolo e CORO STELLINA di Viù",
+        "indirizzoFileVolantini": "\"\r\n\"146"
+    },
+    {
+        "id_uscita": 147,
+        "data_inizio": "2008-05-10 00:00:00",
+        "data_fine": "2008-05-10 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Pessinetto Fuori (To)",
+        "dettagli_uscita": "Concerto nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"148"
+    },
+    {
+        "id_uscita": 149,
+        "data_inizio": "2008-06-07 00:00:00",
+        "data_fine": "2008-06-08 00:00:00",
+        "quandoDescrizione": "Weekend",
+        "luogo_uscita": "alle Cinque Terre (SP)",
+        "dettagli_uscita": "Stage canoro e Gita del coro",
+        "indirizzoFileVolantini": "\"\r\n\"150"
+    },
+    {
+        "id_uscita": 151,
+        "data_inizio": "2008-10-25 00:00:00",
+        "data_fine": "2008-10-25 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Venaria (To)",
+        "dettagli_uscita": "Rassegna Tematica organizzata dal Coro Tre Valli",
+        "indirizzoFileVolantini": "Doc_Volantini/Volantino_251008.pdf\"\r\n\"152"
+    },
+    {
+        "id_uscita": 153,
+        "data_inizio": "2008-12-07 00:00:00",
+        "data_fine": "2008-12-07 00:00:00",
+        "quandoDescrizione": "10:00",
+        "luogo_uscita": "Viù, Chiesa Parrocchiale",
+        "dettagli_uscita": "Animazione S. Messa (la S.Messa verrà trasmessa in diretta su Rete 4)",
+        "indirizzoFileVolantini": "\"\r\n\"154"
+    },
+    {
+        "id_uscita": 155,
+        "data_inizio": "2009-01-04 00:00:00",
+        "data_fine": "2009-01-04 00:00:00",
+        "quandoDescrizione": "9:30",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Animazione della S.Messa presso il Cottolengo",
+        "indirizzoFileVolantini": "\"\r\n\"157"
+    },
+    {
+        "id_uscita": 158,
+        "data_inizio": "2009-06-06 00:00:00",
+        "data_fine": "2009-06-06 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Donnas (Ao)",
+        "dettagli_uscita": "5&#39 Rassegna Corale",
+        "indirizzoFileVolantini": "\"\r\n\"159"
+    },
+    {
+        "id_uscita": 160,
+        "data_inizio": "2009-08-05 00:00:00",
+        "data_fine": "2009-08-05 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Concerto estivo nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"161"
+    },
+    {
+        "id_uscita": 162,
+        "data_inizio": "2009-08-09 00:00:00",
+        "data_fine": "2009-08-09 00:00:00",
+        "quandoDescrizione": "21:30",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Partecipazione alla Rassegna Teatrale FRAGORCUDI&#39 a cura di CAST",
+        "indirizzoFileVolantini": "\"\r\n\"163"
+    },
+    {
+        "id_uscita": 164,
+        "data_inizio": "2009-07-25 00:00:00",
+        "data_fine": "2009-07-25 00:00:00",
+        "quandoDescrizione": "21:30",
+        "luogo_uscita": "Groscavallo (To)",
+        "dettagli_uscita": "Partecipazione alla Rassegna Teatrale FRAGORCUDI&#39 a cura di CAST",
+        "indirizzoFileVolantini": "\"\r\n\"165"
+    },
+    {
+        "id_uscita": 166,
+        "data_inizio": "2009-08-01 00:00:00",
+        "data_fine": "2009-08-01 00:00:00",
+        "quandoDescrizione": "21:30",
+        "luogo_uscita": "Ala di Stura (To)",
+        "dettagli_uscita": "Partecipazione alla Rassegna Teatrale FRAGORCUDI&#39 a cura di CAST",
+        "indirizzoFileVolantini": "\"\r\n\"167"
+    },
+    {
+        "id_uscita": 168,
+        "data_inizio": "2009-10-02 00:00:00",
+        "data_fine": "2009-10-02 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Germagnano (To)",
+        "dettagli_uscita": "Partecipazione alla presentazione del libro di Gianni Oliva &#39Alpini - 140 anni di storia ed eroismi&#39",
+        "indirizzoFileVolantini": "\"\r\n\"169"
+    },
+    {
+        "id_uscita": 139,
+        "data_inizio": "2007-11-10 00:00:00",
+        "data_fine": "2007-11-10 00:00:00",
+        "quandoDescrizione": "15:30",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "festa patronale di San Martino - concerto al Centro Polifunzionale",
+        "indirizzoFileVolantini": "\"\r\n\"140"
+    },
+    {
+        "id_uscita": 142,
+        "data_inizio": "2007-12-26 00:00:00",
+        "data_fine": "2007-12-26 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto di Natale presso il Centro Polifunzionale",
+        "indirizzoFileVolantini": "\"\r\n\"143"
+    },
+    {
+        "id_uscita": 170,
+        "data_inizio": "2009-11-28 00:00:00",
+        "data_fine": "2009-11-28 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Monastero di Lanzo (To)",
+        "dettagli_uscita": "Partecipazione alla presentazione del libro di Gianni Oliva &#39Alpini - 140 anni di storia ed eroismi&#39",
+        "indirizzoFileVolantini": "\"\r\n\"171"
+    },
+    {
+        "id_uscita": 172,
+        "data_inizio": "2010-04-18 00:00:00",
+        "data_fine": "2010-04-18 00:00:00",
+        "quandoDescrizione": "15:00",
+        "luogo_uscita": "San Maurizio C.se (To)",
+        "dettagli_uscita": "Concerto presso Azienda Regionale Sanitaria u.s.l. n.6 r.s.a. - Via Ceretta Inferiore, 93",
+        "indirizzoFileVolantini": "\"\r\n\"173"
+    },
+    {
+        "id_uscita": 174,
+        "data_inizio": "2010-09-11 00:00:00",
+        "data_fine": "2010-09-11 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Pessinetto (To)",
+        "dettagli_uscita": "Concerto presso il Santuario di Sant&#39Ignazio e presentazione del nuovo CD della Coralità Viucese",
+        "indirizzoFileVolantini": "/Doc_Volantini/Volantino_060810.jpg\"\r\n\"175"
+    },
+    {
+        "id_uscita": 177,
+        "data_inizio": "2010-10-17 00:00:00",
+        "data_fine": "2010-10-17 00:00:00",
+        "quandoDescrizione": "15:00",
+        "luogo_uscita": "Vallo (To)",
+        "dettagli_uscita": "Concerto presso Casa Olivero",
+        "indirizzoFileVolantini": "\"\r\n\"178"
+    },
+    {
+        "id_uscita": 179,
+        "data_inizio": "2010-08-14 00:00:00",
+        "data_fine": "2010-08-14 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Animazione S.Rosario presso il Santuario Madonna della Salette",
+        "indirizzoFileVolantini": "\"\r\n\"180"
+    },
+    {
+        "id_uscita": 181,
+        "data_inizio": "2010-07-04 00:00:00",
+        "data_fine": "2010-07-04 00:00:00",
+        "quandoDescrizione": "10:30",
+        "luogo_uscita": "Usseglio (To)",
+        "dettagli_uscita": "Animazione S.Messa presso la Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"182"
+    },
+    {
+        "id_uscita": 183,
+        "data_inizio": "2010-09-25 00:00:00",
+        "data_fine": "2010-09-25 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Lemie (To)",
+        "dettagli_uscita": "Concerto presso la Chiesa Parrocchiale per la festa di S.Michele",
+        "indirizzoFileVolantini": "\"\r\n\"184"
+    },
+    {
+        "id_uscita": 187,
+        "data_inizio": "2010-09-26 00:00:00",
+        "data_fine": "2010-09-26 00:00:00",
+        "quandoDescrizione": "15:00",
+        "luogo_uscita": "Alba (Cn)",
+        "dettagli_uscita": "Festival della Coralità Piemontese, giornata conclusiva presso la  chiesa di S. Domenico",
+        "indirizzoFileVolantini": "Doc_Volantini/manifesto_26_9_2010.pdf\"\r\n\"188"
+    },
+    {
+        "id_uscita": 189,
+        "data_inizio": "2010-11-28 00:00:00",
+        "data_fine": "2010-11-28 00:00:00",
+        "quandoDescrizione": "16:00",
+        "luogo_uscita": "Traves",
+        "dettagli_uscita": "Concerto di Natale presso la Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"190"
+    },
+    {
+        "id_uscita": 191,
+        "data_inizio": "2010-12-29 00:00:00",
+        "data_fine": "2010-12-29 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto di Natale presso il Centro Polifunzionale di Viù con la partecipazione del gruppo di ottoni \"Rhythm and Brass\" e dei bimbi dell&#39asilo",
+        "indirizzoFileVolantini": "\"\r\n\"192"
+    },
+    {
+        "id_uscita": 193,
+        "data_inizio": "2011-03-20 00:00:00",
+        "data_fine": "2011-03-20 00:00:00",
+        "quandoDescrizione": "15:00",
+        "luogo_uscita": "Varisella (TO)",
+        "dettagli_uscita": "Concerto presso la RSA di Varisella",
+        "indirizzoFileVolantini": "\"\r\n\"194"
+    },
+    {
+        "id_uscita": 195,
+        "data_inizio": "2011-07-09 00:00:00",
+        "data_fine": "2011-07-09 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Chialamberto (TO)",
+        "dettagli_uscita": "Concerto estivo presso la Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"197"
+    },
+    {
+        "id_uscita": 198,
+        "data_inizio": "2011-08-05 00:00:00",
+        "data_fine": "2011-08-05 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto estivo presso la Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "Doc_Volantini/manifesto_5_8_2011.pdf\"\r\n\"199"
+    },
+    {
+        "id_uscita": 200,
+        "data_inizio": "2011-06-26 00:00:00",
+        "data_fine": "2011-06-26 00:00:00",
+        "quandoDescrizione": "11:30",
+        "luogo_uscita": "Briançon (Francia)",
+        "dettagli_uscita": "Concerto presso la Collégiale Saint Nicolas",
+        "indirizzoFileVolantini": "\"\r\n\"201"
+    },
+    {
+        "id_uscita": 202,
+        "data_inizio": "2011-12-08 00:00:00",
+        "data_fine": "2011-12-08 00:00:00",
+        "quandoDescrizione": "16:30",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Animazione S.Rosario e vespri presso la Cappella di Villa Schiari in diretta radiofonica su Radio Maria",
+        "indirizzoFileVolantini": "\"\r\n\"203"
+    },
+    {
+        "id_uscita": 204,
+        "data_inizio": "2012-02-26 00:00:00",
+        "data_fine": "2012-02-26 00:00:00",
+        "quandoDescrizione": "21:30",
+        "luogo_uscita": "Rivarolo (TO)",
+        "dettagli_uscita": "Concerto presso la Chiesa di San Giacomo con il Coro Polifonico Città di Rivarolo",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_26feb12.pdf\"\r\n\"205"
+    },
+    {
+        "id_uscita": 206,
+        "data_inizio": "2012-10-06 00:00:00",
+        "data_fine": "2012-10-06 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Agliè (TO)",
+        "dettagli_uscita": "26° rassegna “Settembre in Coro”",
+        "indirizzoFileVolantini": "Doc_Volantini/sett_in_coro_6_10_2012.pdf\"\r\n\"208"
+    },
+    {
+        "id_uscita": 209,
+        "data_inizio": "2012-08-03 00:00:00",
+        "data_fine": "2012-08-03 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto estivo presso la Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"210"
+    },
+    {
+        "id_uscita": 211,
+        "data_inizio": "2012-06-30 00:00:00",
+        "data_fine": "2012-06-30 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Ceresole Reale (TO)",
+        "dettagli_uscita": "Concerto \"Buon Compleanno Parco\" nel Salone delle Feste del Gran Hotel di Ceresole",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_alborada_30_6_01_7.pdf\"\r"
+    },
+    {
+        "id_uscita": 214,
+        "data_inizio": "2012-06-17 00:00:00",
+        "data_fine": "2012-06-17 00:00:00",
+        "quandoDescrizione": "10:30",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Animazione S.Messa in occasione della visita pastorale dell&#39arcivescovo Cesare Nosiglia",
+        "indirizzoFileVolantini": "\"\r\n\"1"
+    },
+    {
+        "id_uscita": 2,
+        "data_inizio": "1999-08-16 00:00:00",
+        "data_fine": "1999-08-16 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "frazione Tornetti di Viù (TO)",
+        "dettagli_uscita": "Li Tornòt d’in bòt - canti in piazza e concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"3"
+    },
+    {
+        "id_uscita": 4,
+        "data_inizio": "1999-12-24 00:00:00",
+        "data_fine": "1999-12-24 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "esecuzione di brani natalizi aspettando la S. Messa di Mezzanotte",
+        "indirizzoFileVolantini": "\"\r\n\"5"
+    },
+    {
+        "id_uscita": 6,
+        "data_inizio": "2000-01-29 00:00:00",
+        "data_fine": "2000-01-29 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Vallo (TO)",
+        "dettagli_uscita": "festa Don Bosco e i giovani 2000",
+        "indirizzoFileVolantini": "\"\r\n\"7"
+    },
+    {
+        "id_uscita": 8,
+        "data_inizio": "2000-07-07 00:00:00",
+        "data_fine": "2000-07-07 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Balangero (TO)",
+        "dettagli_uscita": "Montagne di Note - concerto a Balangero, Parco Villa Copperi",
+        "indirizzoFileVolantini": "\"\r\n\"9"
+    },
+    {
+        "id_uscita": 10,
+        "data_inizio": "2000-07-08 00:00:00",
+        "data_fine": "2000-07-08 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Montagne di Note - concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"11"
+    },
+    {
+        "id_uscita": 12,
+        "data_inizio": "2000-08-05 00:00:00",
+        "data_fine": "2000-08-05 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "frazione Polpresa di Viù (TO)",
+        "dettagli_uscita": "festa patronale di S. Lorenzo - concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"13"
+    },
+    {
+        "id_uscita": 14,
+        "data_inizio": "2000-08-13 00:00:00",
+        "data_fine": "2000-08-13 00:00:00",
+        "quandoDescrizione": "Mattino",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "animazione della S. Messa",
+        "indirizzoFileVolantini": "\"\r\n\"15"
+    },
+    {
+        "id_uscita": 16,
+        "data_inizio": "2000-08-18 00:00:00",
+        "data_fine": "2000-08-18 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "frazione Bogliano di Mezzenile (TO)",
+        "dettagli_uscita": "festa patronale di S. Bernardo - concerto in piazza",
+        "indirizzoFileVolantini": "\"\r\n\"17"
+    },
+    {
+        "id_uscita": 18,
+        "data_inizio": "2000-09-09 00:00:00",
+        "data_fine": "2000-09-09 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "frazione Savoulx di Oulx (TO)",
+        "dettagli_uscita": "Fète d’“La Valaddo” - concerto in piazza",
+        "indirizzoFileVolantini": "\"\r\n\"19"
+    },
+    {
+        "id_uscita": 20,
+        "data_inizio": "2000-11-11 00:00:00",
+        "data_fine": "2000-11-11 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "festa patronale di S. Martino - concerto al capannone",
+        "indirizzoFileVolantini": "\"\r\n\"21"
+    },
+    {
+        "id_uscita": 22,
+        "data_inizio": "2000-12-09 00:00:00",
+        "data_fine": "2000-12-09 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "concerto a favore degli alluvionati della Valle di Viù",
+        "indirizzoFileVolantini": "\"\r\n\"23"
+    },
+    {
+        "id_uscita": 24,
+        "data_inizio": "2000-12-29 00:00:00",
+        "data_fine": "2000-12-29 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "frazione Savoulx di Oulx (TO)",
+        "dettagli_uscita": "concerto natalizio in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"25"
+    },
+    {
+        "id_uscita": 26,
+        "data_inizio": "2001-03-18 00:00:00",
+        "data_fine": "2001-03-18 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "concerto di musiche di Marco Gandini",
+        "indirizzoFileVolantini": "\"\r\n\"27"
+    },
+    {
+        "id_uscita": 28,
+        "data_inizio": "2001-05-20 00:00:00",
+        "data_fine": "2001-05-20 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "partecipazione allo spettacolo teatrale della scuola di Viù",
+        "indirizzoFileVolantini": "\"\r\n\"29"
+    },
+    {
+        "id_uscita": 30,
+        "data_inizio": "2001-06-14 00:00:00",
+        "data_fine": "2001-06-14 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Mezzenile (TO)",
+        "dettagli_uscita": "concerto nel teatro parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"31"
+    },
+    {
+        "id_uscita": 32,
+        "data_inizio": "2001-08-25 00:00:00",
+        "data_fine": "2001-08-25 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "concerto estivo nella Confraternita",
+        "indirizzoFileVolantini": "\"\r\n\"33"
+    },
+    {
+        "id_uscita": 34,
+        "data_inizio": "2001-09-08 00:00:00",
+        "data_fine": "2001-09-08 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "animazione della S. Messa alla Madonna di Prà Colèt",
+        "indirizzoFileVolantini": "\"\r\n\"35"
+    },
+    {
+        "id_uscita": 39,
+        "data_inizio": "2001-10-06 00:00:00",
+        "data_fine": "2001-10-06 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Germagnano (TO)",
+        "dettagli_uscita": "festa dell’AVIS - concerto in Chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"40"
+    },
+    {
+        "id_uscita": 41,
+        "data_inizio": "2001-11-11 00:00:00",
+        "data_fine": "2001-11-11 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "festa patronale di S. Martino - concerto al capannone",
+        "indirizzoFileVolantini": "\"\r\n\"42"
+    },
+    {
+        "id_uscita": 43,
+        "data_inizio": "2001-12-29 00:00:00",
+        "data_fine": "2001-12-29 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Oulx (TO), frazione Savoulx",
+        "dettagli_uscita": "concerto natalizio in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"44"
+    },
+    {
+        "id_uscita": 45,
+        "data_inizio": "2002-05-19 00:00:00",
+        "data_fine": "2002-05-19 00:00:00",
+        "quandoDescrizione": "Mattino",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "animazione S. Messa della Pentecoste",
+        "indirizzoFileVolantini": "\"\r\n\"46"
+    },
+    {
+        "id_uscita": 47,
+        "data_inizio": "2002-08-18 00:00:00",
+        "data_fine": "2002-08-18 00:00:00",
+        "quandoDescrizione": "Mattino",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "animazione S. Messa",
+        "indirizzoFileVolantini": "\"\r\n\"48"
+    },
+    {
+        "id_uscita": 49,
+        "data_inizio": "2002-08-31 00:00:00",
+        "data_fine": "2002-08-31 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Ceres (TO)",
+        "dettagli_uscita": "concerto per Don Celestino",
+        "indirizzoFileVolantini": "\"\r\n\"50"
+    },
+    {
+        "id_uscita": 51,
+        "data_inizio": "2002-09-08 00:00:00",
+        "data_fine": "2002-09-08 00:00:00",
+        "quandoDescrizione": "Mattino",
+        "luogo_uscita": "Viù (TO), frazione Fubina",
+        "dettagli_uscita": "festa patronale di S. Michele - animazione della S. Messa",
+        "indirizzoFileVolantini": "\"\r\n\"53"
+    },
+    {
+        "id_uscita": 54,
+        "data_inizio": "2002-11-10 00:00:00",
+        "data_fine": "2002-11-10 00:00:00",
+        "quandoDescrizione": "Mattino",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "festa patronale di San Martino, animazione della S. Messa",
+        "indirizzoFileVolantini": "\"\r\n\"55"
+    },
+    {
+        "id_uscita": 56,
+        "data_inizio": "2002-12-14 00:00:00",
+        "data_fine": "2002-12-14 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Prascorsano (TO)",
+        "dettagli_uscita": "concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"57"
+    },
+    {
+        "id_uscita": 58,
+        "data_inizio": "2002-12-21 00:00:00",
+        "data_fine": "2002-12-21 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Banchette di Ivrea (TO)",
+        "dettagli_uscita": "concerto nel centro polifunzionale",
+        "indirizzoFileVolantini": "\"\r\n\"59"
+    },
+    {
+        "id_uscita": 60,
+        "data_inizio": "2002-12-29 00:00:00",
+        "data_fine": "2002-12-29 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "concerto alla Colonia “E.Dominici” per i 75 anni di professione religiosa di Suor Gisella",
+        "indirizzoFileVolantini": "\"\r\n\"61"
+    },
+    {
+        "id_uscita": 63,
+        "data_inizio": "2003-05-17 00:00:00",
+        "data_fine": "2003-05-18 00:00:00",
+        "quandoDescrizione": "Weekend",
+        "luogo_uscita": "Chambéry (Francia)",
+        "dettagli_uscita": "weekend-stage canoro “Les heures chantantes” e concerto al Centre des Conventions",
+        "indirizzoFileVolantini": "\"\r\n\"64"
+    },
+    {
+        "id_uscita": 65,
+        "data_inizio": "2003-07-25 00:00:00",
+        "data_fine": "2003-07-25 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "partecipazione ai festeggiamenti per l'80° anniversario del Gruppo A.N.A. di Viù",
+        "indirizzoFileVolantini": "\"\r\n\"66"
+    },
+    {
+        "id_uscita": 67,
+        "data_inizio": "2003-08-23 00:00:00",
+        "data_fine": "2003-08-23 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Groscavallo (TO)",
+        "dettagli_uscita": "concerto presso Villa Pastrone organizzato dal C.A.I. di Venaria ",
+        "indirizzoFileVolantini": "\"\r\n\"68"
+    },
+    {
+        "id_uscita": 69,
+        "data_inizio": "2003-08-30 00:00:00",
+        "data_fine": "2003-08-30 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "concerto estivo nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"70"
+    },
+    {
+        "id_uscita": 71,
+        "data_inizio": "2003-09-20 00:00:00",
+        "data_fine": "2003-09-20 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "animazione della S. Messa alla Madonna di Prà Colèt",
+        "indirizzoFileVolantini": "\"\r\n\"72"
+    },
+    {
+        "id_uscita": 73,
+        "data_inizio": "2003-12-21 00:00:00",
+        "data_fine": "2003-12-21 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Lanzo (TO)",
+        "dettagli_uscita": "concerto natalizio nella chiesa S. Croce",
+        "indirizzoFileVolantini": "\"\r\n\"74"
+    },
+    {
+        "id_uscita": 131,
+        "data_inizio": "2007-05-20 00:00:00",
+        "data_fine": "2007-05-20 00:00:00",
+        "quandoDescrizione": "11:00",
+        "luogo_uscita": "Mathi (TO)",
+        "dettagli_uscita": "Festa coscritti classe 1947",
+        "indirizzoFileVolantini": "\"\r\n\"215"
+    },
+    {
+        "id_uscita": 216,
+        "data_inizio": "2012-07-01 00:00:00",
+        "data_fine": "2012-07-01 00:00:00",
+        "quandoDescrizione": "11:00",
+        "luogo_uscita": "Ceresole Reale (TO)",
+        "dettagli_uscita": "Animazione della S. Messa presso il Palamila",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_alborada_30_6_01_7.pdf\"\r"
+    },
+    {
+        "id_uscita": 76,
+        "data_inizio": "2004-04-24 00:00:00",
+        "data_fine": "2004-04-24 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Robassomero (TO)",
+        "dettagli_uscita": "serata in ricordo della Resistenza",
+        "indirizzoFileVolantini": "\"\r\n\"77"
+    },
+    {
+        "id_uscita": 78,
+        "data_inizio": "2004-05-29 00:00:00",
+        "data_fine": "2004-05-29 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Cafasse (TO)",
+        "dettagli_uscita": "concerto di primavera 2004",
+        "indirizzoFileVolantini": "\"\r\n\"80"
+    },
+    {
+        "id_uscita": 81,
+        "data_inizio": "2004-08-02 00:00:00",
+        "data_fine": "2004-08-02 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "concerto estivo nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"82"
+    },
+    {
+        "id_uscita": 83,
+        "data_inizio": "2004-08-13 00:00:00",
+        "data_fine": "2004-08-13 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "fraz. Mombresto di Pessinetto (TO)",
+        "dettagli_uscita": "concerto estivo presso la chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"84"
+    },
+    {
+        "id_uscita": 85,
+        "data_inizio": "2004-09-04 00:00:00",
+        "data_fine": "2004-09-04 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "esecuzione di alcuni brani tra il primo e il secondo tempo del concerto del Coro Penne Nere di Aosta",
+        "indirizzoFileVolantini": "\"\r\n\"86"
+    },
+    {
+        "id_uscita": 88,
+        "data_inizio": "2004-10-17 00:00:00",
+        "data_fine": "2004-10-17 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Mappano (TO)",
+        "dettagli_uscita": "rassegna corale \"Arcobaleno Musicale\"",
+        "indirizzoFileVolantini": "\"\r\n\"89"
+    },
+    {
+        "id_uscita": 90,
+        "data_inizio": "2004-12-18 00:00:00",
+        "data_fine": "2004-12-18 00:00:00",
+        "quandoDescrizione": "Sera",
+        "luogo_uscita": "Germagnano (TO)",
+        "dettagli_uscita": "concerto natalizio di beneficenza per Ivan Gallino",
+        "indirizzoFileVolantini": "\"\r\n\"91"
+    },
+    {
+        "id_uscita": 92,
+        "data_inizio": "2005-02-24 00:00:00",
+        "data_fine": "2005-02-24 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "inaugurazione del progetto \"Residenze teatrali\" (RE.TE.) 2005",
+        "indirizzoFileVolantini": "\"\r\n\"93"
+    },
+    {
+        "id_uscita": 94,
+        "data_inizio": "2005-05-15 00:00:00",
+        "data_fine": "2005-05-15 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Pianezza (TO)",
+        "dettagli_uscita": "concerto in occasione della \"Giornata della Piemontesità\"",
+        "indirizzoFileVolantini": "\"\r\n\"95"
+    },
+    {
+        "id_uscita": 96,
+        "data_inizio": "2005-05-28 00:00:00",
+        "data_fine": "2005-05-28 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Settimo (TO)",
+        "dettagli_uscita": "Rassegna \"Concerto di primavera\" organizzata dal coro La Ginestra",
+        "indirizzoFileVolantini": "\"\r\n\"97"
+    },
+    {
+        "id_uscita": 98,
+        "data_inizio": "2005-06-25 00:00:00",
+        "data_fine": "2005-06-25 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "fraz. Bertesseno di VIU' (TO)",
+        "dettagli_uscita": "partecipazione ai festeggiamenti per il 60° Anniversario della Liberazione",
+        "indirizzoFileVolantini": "\"\r\n\"99"
+    },
+    {
+        "id_uscita": 101,
+        "data_inizio": "2005-07-22 00:00:00",
+        "data_fine": "2005-07-22 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "concerto in chiesa per il 70° del Gruppo A.N.A. di Usseglio",
+        "indirizzoFileVolantini": "\"\r\n\"217"
+    },
+    {
+        "id_uscita": 218,
+        "data_inizio": "2012-07-15 00:00:00",
+        "data_fine": "2012-07-15 00:00:00",
+        "quandoDescrizione": "10:30",
+        "luogo_uscita": "Usseglio (To)",
+        "dettagli_uscita": "Animazione della S. Messa in occasione della visita pastorale dall&#39arcivescovo Cesare Nosiglia",
+        "indirizzoFileVolantini": "\"\r\n\"102"
+    },
+    {
+        "id_uscita": 104,
+        "data_inizio": "2005-11-12 00:00:00",
+        "data_fine": "2005-11-12 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Altessano, Venaria (TO)",
+        "dettagli_uscita": "rassegna corale organizzata dal CAI di Venaria",
+        "indirizzoFileVolantini": "\"\r\n\"105"
+    },
+    {
+        "id_uscita": 106,
+        "data_inizio": "2005-11-19 00:00:00",
+        "data_fine": "2005-11-19 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Nole (TO)",
+        "dettagli_uscita": "concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"107"
+    },
+    {
+        "id_uscita": 108,
+        "data_inizio": "2005-12-15 00:00:00",
+        "data_fine": "2005-12-15 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "concerto di Natale nella Cappella dei Mercanti organizzato dall'Unione Cattolica Farmacisti Italiani",
+        "indirizzoFileVolantini": "Doc_Volantini/Volantino_151205.doc\"\r\n\"109"
+    },
+    {
+        "id_uscita": 110,
+        "data_inizio": "2005-12-23 00:00:00",
+        "data_fine": "2005-12-23 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "La Coralità Viucese ospita il Coro LA RUPE di Quincinetto",
+        "indirizzoFileVolantini": "\"\r\n\"111"
+    },
+    {
+        "id_uscita": 112,
+        "data_inizio": "2005-12-27 00:00:00",
+        "data_fine": "2005-12-27 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Sestriere (TO)",
+        "dettagli_uscita": "Concerto di Natale nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"113"
+    },
+    {
+        "id_uscita": 114,
+        "data_inizio": "2006-03-04 00:00:00",
+        "data_fine": "2006-03-04 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Inaugurazione del progetto \"Residenze teatrali\" (RE.TE.) 2006 \"L'amore nelle Valli di Lanzo\"",
+        "indirizzoFileVolantini": "\"\r\n\"115"
+    },
+    {
+        "id_uscita": 116,
+        "data_inizio": "2006-05-25 00:00:00",
+        "data_fine": "2006-05-25 00:00:00",
+        "quandoDescrizione": "20:00",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "Partecipazione alla trasmissione televisiva 'Nòst Piemont' di Telestudio",
+        "indirizzoFileVolantini": "\"\r\n\"118"
+    },
+    {
+        "id_uscita": 119,
+        "data_inizio": "2006-06-24 00:00:00",
+        "data_fine": "2006-06-24 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Progetto RE.TE. 2006: partecipazione alla rappresentazione teatrale \"L'amore nelle Valli di Lanzo\"",
+        "indirizzoFileVolantini": "\"\r\n\"120"
+    },
+    {
+        "id_uscita": 121,
+        "data_inizio": "2006-06-25 00:00:00",
+        "data_fine": "2006-06-25 00:00:00",
+        "quandoDescrizione": "18:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Progetto RE.TE. 2006: partecipazione alla Festa Festival e alla rappresentazione teatrale \"L'amore nelle Valli di Lanzo\"",
+        "indirizzoFileVolantini": "\"\r\n\"122"
+    },
+    {
+        "id_uscita": 123,
+        "data_inizio": "2006-08-27 00:00:00",
+        "data_fine": "2006-08-27 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto estivo nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"124"
+    },
+    {
+        "id_uscita": 125,
+        "data_inizio": "2006-11-01 00:00:00",
+        "data_fine": "2006-11-01 00:00:00",
+        "quandoDescrizione": "16:00",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "6° Rassegna Corale Itinerante nei Cimiteri Torinesi",
+        "indirizzoFileVolantini": "\"\r\n\"126"
+    },
+    {
+        "id_uscita": 127,
+        "data_inizio": "2006-12-10 00:00:00",
+        "data_fine": "2006-12-10 00:00:00",
+        "quandoDescrizione": "15:00",
+        "luogo_uscita": "Ceres (TO)",
+        "dettagli_uscita": "Concerto di Natale nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"128"
+    },
+    {
+        "id_uscita": 129,
+        "data_inizio": "2006-12-23 00:00:00",
+        "data_fine": "2006-12-23 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Traves (TO)",
+        "dettagli_uscita": "Concerto di Natale nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"130"
+    },
+    {
+        "id_uscita": 133,
+        "data_inizio": "2007-06-24 00:00:00",
+        "data_fine": "2007-06-24 00:00:00",
+        "quandoDescrizione": "10:00",
+        "luogo_uscita": "fraz. Margaula di Germagnano (TO)",
+        "dettagli_uscita": "Animazione S.Messa",
+        "indirizzoFileVolantini": "\"\r\n\"134"
+    },
+    {
+        "id_uscita": 135,
+        "data_inizio": "2007-08-05 00:00:00",
+        "data_fine": "2007-08-05 00:00:00",
+        "quandoDescrizione": "18:30",
+        "luogo_uscita": "fraz. Cramoletti di Viù (TO)",
+        "dettagli_uscita": "Festa dei forni",
+        "indirizzoFileVolantini": "\"\r\n\"136"
+    },
+    {
+        "id_uscita": 138,
+        "data_inizio": "2007-07-28 00:00:00",
+        "data_fine": "2007-07-28 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Lingotto (TO), 8Gallery",
+        "dettagli_uscita": "Rassegna Corale presso la Corte della Ristorazione",
+        "indirizzoFileVolantini": "\"\r\n\"219"
+    },
+    {
+        "id_uscita": 220,
+        "data_inizio": "2013-04-28 00:00:00",
+        "data_fine": "2013-04-28 00:00:00",
+        "quandoDescrizione": "16:00",
+        "luogo_uscita": "Piennes (Francia)",
+        "dettagli_uscita": "II Festival di canto corale \"Mines en choeur\"",
+        "indirizzoFileVolantini": "Doc_Volantini/Programme_Piennes_28042013.pdf\"\r\n\"2"
+    },
+    {
+        "id_uscita": 222,
+        "data_inizio": "2013-01-05 00:00:00",
+        "data_fine": "2013-01-05 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Favria (TO)",
+        "dettagli_uscita": "Concerto presso il Salone San Michele",
+        "indirizzoFileVolantini": "Doc_Volantini/favria_5-1-2013.docx\"\r\n\"223"
+    },
+    {
+        "id_uscita": 224,
+        "data_inizio": "2012-12-16 00:00:00",
+        "data_fine": "2012-12-16 00:00:00",
+        "quandoDescrizione": "15:30",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Canti natalizi presso la Chiesa Parrocchiale, in occasione di &#39Babbo Natale a Viù&#39",
+        "indirizzoFileVolantini": "\"\r\n\"225"
+    },
+    {
+        "id_uscita": 226,
+        "data_inizio": "2013-05-25 00:00:00",
+        "data_fine": "2013-05-25 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Tavagnasco (TO)",
+        "dettagli_uscita": "Rassegna Corale organizzata dal Coro Rio Fontano",
+        "indirizzoFileVolantini": "Doc_Volantini/volantino_tavagnasco_25052013.pdf\"\r"
+    },
+    {
+        "id_uscita": 228,
+        "data_inizio": "2013-07-27 00:00:00",
+        "data_fine": "2013-07-27 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto per il 90° di fondazione del Gruppo A.N.A. di Viu&#39 con il coro Stellina",
+        "indirizzoFileVolantini": "\"\r\n\"229"
+    },
+    {
+        "id_uscita": 230,
+        "data_inizio": "2013-10-25 00:00:00",
+        "data_fine": "2013-10-25 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Boves (CN)",
+        "dettagli_uscita": "Piemonte In... Canto",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_BOVES_25102013.pdf\"\r\n\"23"
+    },
+    {
+        "id_uscita": 232,
+        "data_inizio": "2014-04-05 00:00:00",
+        "data_fine": "2014-04-05 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Villar Pellice (TO)",
+        "dettagli_uscita": "Concerto presso il Tempio Valdese organizzato dal Gruppo Corale Ciansunando",
+        "indirizzoFileVolantini": "/Doc_Volantini/volantino_05042014.pdf\"\r\n\"233"
+    },
+    {
+        "id_uscita": 235,
+        "data_inizio": "2014-03-22 00:00:00",
+        "data_fine": "2014-03-22 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Borgo San Lorenzo (Firenze)",
+        "dettagli_uscita": "Concerto in chiesa",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_22-23-03-2014.pdf\"\r\n\"236"
+    },
+    {
+        "id_uscita": 237,
+        "data_inizio": "2014-08-01 00:00:00",
+        "data_fine": "2014-08-01 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (To)",
+        "dettagli_uscita": "Concerto estivo nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "/Doc_Volantini/volantino_01082014.pdf\"\r\n\"238"
+    },
+    {
+        "id_uscita": 239,
+        "data_inizio": "2014-09-21 00:00:00",
+        "data_fine": "2014-09-21 00:00:00",
+        "quandoDescrizione": "15:30",
+        "luogo_uscita": "Mentone (Francia)",
+        "dettagli_uscita": "Concerto nella chiesa del Sacre&#39 Coeur",
+        "indirizzoFileVolantini": "\"\r\n\"240"
+    },
+    {
+        "id_uscita": 242,
+        "data_inizio": "2016-03-28 00:00:00",
+        "data_fine": "2016-03-29 00:00:00",
+        "quandoDescrizione": "18:00",
+        "luogo_uscita": "Lourdes",
+        "dettagli_uscita": "Pellegrinaggio e animazione delle funzioni religiose con diretta televisiva su TV2000",
+        "indirizzoFileVolantini": "\"\r\n\"243"
+    },
+    {
+        "id_uscita": 244,
+        "data_inizio": "2015-04-18 00:00:00",
+        "data_fine": "2015-04-18 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Pinerolo (TO)",
+        "dettagli_uscita": "Rassegna Corale InterRegionale CANTINCORO presso Chiesa San Domenico",
+        "indirizzoFileVolantini": "/Doc_Volantini/locandina_cantincoro_pinerolo.pdf\""
+    },
+    {
+        "id_uscita": 246,
+        "data_inizio": "2015-06-13 00:00:00",
+        "data_fine": "2015-06-13 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Rubiana (TO)",
+        "dettagli_uscita": "Concerto presso il salone parrocchiale per i terremotati del Nepal",
+        "indirizzoFileVolantini": "/Doc_Volantini/nepal.pdf\"\r\n\"247"
+    },
+    {
+        "id_uscita": 248,
+        "data_inizio": "2015-06-20 00:00:00",
+        "data_fine": "2015-06-20 00:00:00",
+        "quandoDescrizione": "16:00",
+        "luogo_uscita": "Balangero (TO)",
+        "dettagli_uscita": "Animazione S.Messa per il Matrimonio di Carlo A. e Alessia P.",
+        "indirizzoFileVolantini": "\"\r\n\"249"
+    },
+    {
+        "id_uscita": 250,
+        "data_inizio": "2015-09-05 00:00:00",
+        "data_fine": "2015-09-05 00:00:00",
+        "quandoDescrizione": "11:00",
+        "luogo_uscita": "Usseglio (TO)",
+        "dettagli_uscita": "Animazione S.Messa per il Matrimonio di Bianca S. e Daniele T.",
+        "indirizzoFileVolantini": "\"\r\n\"251"
+    },
+    {
+        "id_uscita": 252,
+        "data_inizio": "2015-10-04 00:00:00",
+        "data_fine": "2015-10-04 00:00:00",
+        "quandoDescrizione": "10:30",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Festa dell&#39Arma dei Carabinieri - Animazione S.Messa",
+        "indirizzoFileVolantini": "\"\r\n\"253"
+    },
+    {
+        "id_uscita": 254,
+        "data_inizio": "2015-11-28 00:00:00",
+        "data_fine": "2015-11-28 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Cantalupo (AL)",
+        "dettagli_uscita": "Concerto nella Chiesa Parrocchiale",
+        "indirizzoFileVolantini": "\"\r\n\"255"
+    },
+    {
+        "id_uscita": 256,
+        "data_inizio": "2015-12-05 00:00:00",
+        "data_fine": "2015-12-05 00:00:00",
+        "quandoDescrizione": "10:30",
+        "luogo_uscita": "Viu&#39 (TO)",
+        "dettagli_uscita": "Animazione S.Messa per il Matrimonio di Vittoria C. e Simone C.",
+        "indirizzoFileVolantini": "\"\r\n\"259"
+    },
+    {
+        "id_uscita": 258,
+        "data_inizio": "2016-01-05 00:00:00",
+        "data_fine": "2016-01-05 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viu&#39 (TO)",
+        "dettagli_uscita": "Concerto dell&#39epifania",
+        "indirizzoFileVolantini": "\"\r\n\"260"
+    },
+    {
+        "id_uscita": 261,
+        "data_inizio": "2016-08-03 00:00:00",
+        "data_fine": "2016-08-03 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concerto estivo presso la chiesa Parrocchiale",
+        "indirizzoFileVolantini": "/Doc_Volantini/Concerto_estivo2016.jpg\"\r\n\"262"
+    },
+    {
+        "id_uscita": 263,
+        "data_inizio": "2016-11-27 00:00:00",
+        "data_fine": "2016-11-27 00:00:00",
+        "quandoDescrizione": "15:30",
+        "luogo_uscita": "Mathi (TO)",
+        "dettagli_uscita": "Concerto presso la cappella della Residenza Chantal",
+        "indirizzoFileVolantini": "\"\r\n\"264"
+    },
+    {
+        "id_uscita": 265,
+        "data_inizio": "2017-05-21 00:00:00",
+        "data_fine": "2017-05-21 00:00:00",
+        "quandoDescrizione": "Pomeriggio",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Concorso Corale Regionale indetto da ACP in collaborazione con il Comune di Viù",
+        "indirizzoFileVolantini": "/Doc_Volantini/Concorso_Regionale_2017.jpeg\"\r\n\"26"
+    },
+    {
+        "id_uscita": 267,
+        "data_inizio": "2017-07-08 00:00:00",
+        "data_fine": "2017-07-08 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Viù (TO)",
+        "dettagli_uscita": "Rassegna Corale \"Paesaggi Corali\" indetta da ACP",
+        "indirizzoFileVolantini": "/Doc_Volantini/Viu&#768;_8_luglio.pdf\"\r\n\"268"
+    },
+    {
+        "id_uscita": 270,
+        "data_inizio": "2017-10-06 00:00:00",
+        "data_fine": "2017-10-06 00:00:00",
+        "quandoDescrizione": "21:00",
+        "luogo_uscita": "Pianazzola (Sondrio)",
+        "dettagli_uscita": "Concerto in chiesa",
+        "indirizzoFileVolantini": "\"\r\n\"271"
+    },
+    {
+        "id_uscita": 272,
+        "data_inizio": "2017-09-23 00:00:00",
+        "data_fine": "2017-09-23 00:00:00",
+        "quandoDescrizione": "18:00",
+        "luogo_uscita": "Balangero (TO)",
+        "dettagli_uscita": "Animazione S.Messa presso la Chiesa di San Giacomo",
+        "indirizzoFileVolantini": "\"\r\n\"274"
+    },
+    {
+        "id_uscita": 273,
+        "data_inizio": "2026-05-09 00:00:00",
+        "data_fine": "2026-05-09 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Ciriè",
+        "dettagli_uscita": "Concerto per la festa della Mamma - organizzato da: Centro Aiuto alla Vita",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 274,
+        "data_inizio": "2026-08-02 00:00:00",
+        "data_fine": "2026-08-02 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 275,
+        "data_inizio": "2025-11-25 00:00:00",
+        "data_fine": "2025-11-25 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "Casa di pace, non cortile di guerra - organizzato da: Associazione Cori Piemontesi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 276,
+        "data_inizio": "2025-10-11 00:00:00",
+        "data_fine": "2025-10-11 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Verbania",
+        "dettagli_uscita": "16° Concorso Polifonico del Lago Maggiore - organizzato da: Associazione Cori Piemontesi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 277,
+        "data_inizio": "2025-09-28 00:00:00",
+        "data_fine": "2025-09-28 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Savigliano",
+        "dettagli_uscita": "Musica è vita - organizzato da: Coro 4Joy",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 278,
+        "data_inizio": "2025-08-03 00:00:00",
+        "data_fine": "2025-08-03 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 279,
+        "data_inizio": "2025-05-31 00:00:00",
+        "data_fine": "2025-05-31 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "Concerto a Maria Ausiliatrice - organizzato da: Basilica di Maria Ausiliatrice",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 280,
+        "data_inizio": "2025-05-11 00:00:00",
+        "data_fine": "2025-05-11 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Savigliano",
+        "dettagli_uscita": "Intrecci Corali - organizzato da: Associazione Cori Piemontesi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 281,
+        "data_inizio": "2025-05-03 00:00:00",
+        "data_fine": "2025-05-03 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Pieve di Cadore",
+        "dettagli_uscita": "Concerto Pieve di Cadore - organizzato da: Magnifica Comunità di Cadore",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 282,
+        "data_inizio": "2025-05-01 00:00:00",
+        "data_fine": "2025-05-01 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Padova",
+        "dettagli_uscita": "Padova, Urbs Organi - organizzato da: Centro organistico padovano",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 283,
+        "data_inizio": "2024-09-28 00:00:00",
+        "data_fine": "2024-09-28 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Lanzo Torinese",
+        "dettagli_uscita": "40' Anniversario della Beatificazione di Federico Albert - organizzato da: Suore Albertine di Lanzo Torinese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 284,
+        "data_inizio": "2024-08-04 00:00:00",
+        "data_fine": "2024-08-04 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo - organizzato da: Pro Loco Viu'",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 285,
+        "data_inizio": "2024-06-15 00:00:00",
+        "data_fine": "2024-06-15 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Pianezza",
+        "dettagli_uscita": "Iter Vocis 2024 - organizzato da: Associazione Cori Piemontesi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 286,
+        "data_inizio": "2024-04-27 00:00:00",
+        "data_fine": "2024-04-27 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Teramo",
+        "dettagli_uscita": "Note in festa - organizzato da: Parrocchia S.Berardo Oblati",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 287,
+        "data_inizio": "2024-04-26 00:00:00",
+        "data_fine": "2024-04-26 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "",
+        "dettagli_uscita": "Concerto di beneficenza - organizzato da: Fondazione Centro Anch'io",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 288,
+        "data_inizio": "2023-12-17 00:00:00",
+        "data_fine": "2023-12-17 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Carignano",
+        "dettagli_uscita": "XXXIII rassegna \"Qui giunti d'ognidove\" - organizzato da: Coro Città di Carignano",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 289,
+        "data_inizio": "2023-09-30 00:00:00",
+        "data_fine": "2023-09-30 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Lemie",
+        "dettagli_uscita": "Festa patronale di San Michele - organizzato da: Pro Loco Lemie",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 290,
+        "data_inizio": "2023-07-30 00:00:00",
+        "data_fine": "2023-07-30 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo in occasione del 100° della Sezione A.N.A. di Viù - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 291,
+        "data_inizio": "2023-07-23 00:00:00",
+        "data_fine": "2023-07-23 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "\"Il borgo delle lose dipinte\" - organizzato da: Associazione Co Moi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 292,
+        "data_inizio": "2023-06-24 00:00:00",
+        "data_fine": "2023-06-24 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Sampeyre",
+        "dettagli_uscita": "Festeggiamenti in onore dei SS Pietro e Paolo - organizzato da: Priori della Parrocchia dei SS. Pietro e Paolo",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 293,
+        "data_inizio": "2023-04-29 00:00:00",
+        "data_fine": "2023-04-29 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Torino",
+        "dettagli_uscita": "\"Un Volto Nuovo\" - organizzato da: Piccola Casa della Divina Provvidenza di Torino",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 294,
+        "data_inizio": "2022-12-16 00:00:00",
+        "data_fine": "2022-12-16 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Conferenza-concerto \"Dal canto spontaneo, ai Cori, a YouTube\" - organizzato da: La Viuleta",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 295,
+        "data_inizio": "2022-11-27 00:00:00",
+        "data_fine": "2022-11-27 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Coassolo Torinese",
+        "dettagli_uscita": "Concerto di Santa Cecilia - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 296,
+        "data_inizio": "2022-07-31 00:00:00",
+        "data_fine": "2022-07-31 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo - organizzato da: Pro Loco di Viu'",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 297,
+        "data_inizio": "2022-06-01 00:00:00",
+        "data_fine": "2022-06-01 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Germagnano",
+        "dettagli_uscita": "Concerto per il 75' del Gruppo A.N.A. di Germagnano - organizzato da: Gruppo A.N.A. di Germagnano",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 298,
+        "data_inizio": "2021-11-13 00:00:00",
+        "data_fine": "2021-11-13 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Mezzenile",
+        "dettagli_uscita": "Concerto di San Martino - organizzato da: Pro Loco di Mezzenile",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 299,
+        "data_inizio": "2021-10-02 00:00:00",
+        "data_fine": "2021-10-02 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Lemie",
+        "dettagli_uscita": "Festa di San Michele Arcangelo - organizzato da: Pro Loco e Gruppo A.N.A. di Lemie",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 300,
+        "data_inizio": "2021-08-03 00:00:00",
+        "data_fine": "2021-08-03 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Usseglio",
+        "dettagli_uscita": "I Concerti della Rinascita - organizzato da: Comune di Usseglio e Pro Loco Usseglio",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 301,
+        "data_inizio": "2021-08-01 00:00:00",
+        "data_fine": "2021-08-01 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "I Concerti della Rinascita - organizzato da: Associazione Pro Loco Viu'",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 302,
+        "data_inizio": "2019-09-15 00:00:00",
+        "data_fine": "2019-09-15 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Savigliano",
+        "dettagli_uscita": "Rassegna Corale Iter Vocis - organizzato da: Associazione Cori Piemontesi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 303,
+        "data_inizio": "2019-08-03 00:00:00",
+        "data_fine": "2019-08-03 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Concerto estivo - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 304,
+        "data_inizio": "2019-07-13 00:00:00",
+        "data_fine": "2019-07-13 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Viù",
+        "dettagli_uscita": "Rassegna Corale - organizzato da: Coralità Viucese",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 305,
+        "data_inizio": "2019-06-29 00:00:00",
+        "data_fine": "2019-06-29 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Sampeyre",
+        "dettagli_uscita": "Festeggiamenti in onore dei Santi Pietro e Paolo - organizzato da: Priori della Parrocchia dei SS. Pietro e Paolo",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 306,
+        "data_inizio": "2019-05-05 00:00:00",
+        "data_fine": "2019-05-05 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Lodi Vecchio",
+        "dettagli_uscita": "Concerto - organizzato da: Citta' di Lodi Vecchio",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 307,
+        "data_inizio": "2019-05-04 00:00:00",
+        "data_fine": "2019-05-04 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Lodi",
+        "dettagli_uscita": "Concerto - organizzato da: Citta' di Lodi",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 308,
+        "data_inizio": "2012-07-01 00:00:00",
+        "data_fine": "2012-07-01 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Ceresole Reale",
+        "dettagli_uscita": "Alborada IV Edizione a Ceresole - organizzato da: Coro Città di Rivarolo",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 309,
+        "data_inizio": "2012-06-30 00:00:00",
+        "data_fine": "2012-06-30 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Ceresole Reale",
+        "dettagli_uscita": "Alborada IV Edizione a Ceresole - organizzato da: Coro Città di Rivarolo",
+        "indirizzoFileVolantini": ""
+    },
+    {
+        "id_uscita": 310,
+        "data_inizio": "2010-09-26 00:00:00",
+        "data_fine": "2010-09-26 00:00:00",
+        "quandoDescrizione": "",
+        "luogo_uscita": "Alba",
+        "dettagli_uscita": "Concorso regionale - organizzato da: ???",
+        "indirizzoFileVolantini": ""
+    }
+]

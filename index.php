@@ -75,9 +75,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/user/CoralitaViucese" target="_blank" data-original-title="Seguici su youtube">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.youtube.com/user/CoralitaViucese" target="_blank" data-original-title="Seguici su Youtube">
                             <i class="fa fa-youtube-square"></i>
                             <p class="hidden-lg-up">Youtube</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/coralita_viucese?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" data-original-title="Seguici su Instagram">
+                            <i class="fa fa-instagram"></i>
+                            <p class="hidden-lg-up">Instagram</p>
                         </a>
                     </li>
                 </ul>

@@ -1,0 +1,751 @@
+[
+    {
+        "id_canti": 44,
+        "Gruppo_id": 1,
+        "Titolo": "A l'ombra do foo",
+        "Armonizzazione": "P. Fornelli; arm. Provera",
+        "Testo": ""
+    },
+    {
+        "id_canti": 71,
+        "Gruppo_id": 1,
+        "Titolo": "A mezzanotte in punto",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 84,
+        "Gruppo_id": 1,
+        "Titolo": "An Irish Blessing",
+        "Armonizzazione": "arrang. J. E. Moore Jr.",
+        "Testo": ""
+    },
+    {
+        "id_canti": 74,
+        "Gruppo_id": 1,
+        "Titolo": "Aria Paesana",
+        "Armonizzazione": "D. Conrero",
+        "Testo": ""
+    },
+    {
+        "id_canti": 3,
+        "Gruppo_id": 1,
+        "Titolo": "Belle rose du printemps",
+        "Armonizzazione": "arm. A. Pedrotti",
+        "Testo": ""
+    },
+    {
+        "id_canti": 31,
+        "Gruppo_id": 1,
+        "Titolo": "Cantemo perche' ne sa  bel",
+        "Armonizzazione": "A. Pedrotti",
+        "Testo": ""
+    },
+    {
+        "id_canti": 69,
+        "Gruppo_id": 1,
+        "Titolo": "Carolina d Savoia",
+        "Armonizzazione": "arm. A. Agazzani",
+        "Testo": ""
+    },
+    {
+        "id_canti": 78,
+        "Gruppo_id": 1,
+        "Titolo": "Cielito Lindo",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 88,
+        "Gruppo_id": 1,
+        "Titolo": "Cortesani",
+        "Armonizzazione": "Bepi De Marzi",
+        "Testo": ""
+    },
+    {
+        "id_canti": 83,
+        "Gruppo_id": 1,
+        "Titolo": "Deserteur",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 4,
+        "Gruppo_id": 1,
+        "Titolo": "Doman l'e' festa",
+        "Armonizzazione": "arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 20,
+        "Gruppo_id": 1,
+        "Titolo": "Dov'e' la mia patria?",
+        "Armonizzazione": "elaboraz. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 68,
+        "Gruppo_id": 1,
+        "Titolo": "Dove te vett, o Mariettina",
+        "Armonizzazione": "arm. A. Mazza",
+        "Testo": ""
+    },
+    {
+        "id_canti": 18,
+        "Gruppo_id": 1,
+        "Titolo": "El canto de la sposa",
+        "Armonizzazione": "rielaboraz. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 11,
+        "Gruppo_id": 1,
+        "Titolo": "Entorno al foch",
+        "Armonizzazione": "arm. A. Benedetti Michelangeli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 22,
+        "Gruppo_id": 1,
+        "Titolo": "Era nato poveretto",
+        "Armonizzazione": "arm. A. Benedetti Michelangeli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 56,
+        "Gruppo_id": 1,
+        "Titolo": "Era sera",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 32,
+        "Gruppo_id": 1,
+        "Titolo": "Erile ba boela hae",
+        "Armonizzazione": "Spiritual Africano",
+        "Testo": ""
+    },
+    {
+        "id_canti": 16,
+        "Gruppo_id": 1,
+        "Titolo": "Fila, fila",
+        "Armonizzazione": "ricostruz. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 67,
+        "Gruppo_id": 1,
+        "Titolo": "Guantanamera",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 12,
+        "Gruppo_id": 1,
+        "Titolo": "Il maritino",
+        "Armonizzazione": "arm. A. Benedetti Michelangeli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 21,
+        "Gruppo_id": 1,
+        "Titolo": "La bela giardiniera",
+        "Armonizzazione": "arm. G. Veneri",
+        "Testo": ""
+    },
+    {
+        "id_canti": 15,
+        "Gruppo_id": 1,
+        "Titolo": "La blonde",
+        "Armonizzazione": "arm. A. Benedetti Michelangeli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 24,
+        "Gruppo_id": 1,
+        "Titolo": "La cima del Montello",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 58,
+        "Gruppo_id": 1,
+        "Titolo": "La ligrie",
+        "Armonizzazione": "arm. A. Pedrotti",
+        "Testo": ""
+    },
+    {
+        "id_canti": 47,
+        "Gruppo_id": 1,
+        "Titolo": "La Montanara",
+        "Armonizzazione": "T. Ortelli; arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 5,
+        "Gruppo_id": 1,
+        "Titolo": "La pastora",
+        "Armonizzazione": "arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 13,
+        "Gruppo_id": 1,
+        "Titolo": "La scelta felice",
+        "Armonizzazione": "arm. A. Benedetti Michelangeli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 54,
+        "Gruppo_id": 1,
+        "Titolo": "La tradotta",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 46,
+        "Gruppo_id": 1,
+        "Titolo": "Lu piante de le fojje",
+        "Armonizzazione": "G. Albanese; arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 43,
+        "Gruppo_id": 1,
+        "Titolo": "M'an da fa 'l muleta",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 60,
+        "Gruppo_id": 1,
+        "Titolo": "Martina 'd Carlive'",
+        "Armonizzazione": "arm. A. Agazzani",
+        "Testo": ""
+    },
+    {
+        "id_canti": 51,
+        "Gruppo_id": 1,
+        "Titolo": "Montagne Addio!",
+        "Armonizzazione": "G. Bregani; arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 52,
+        "Gruppo_id": 1,
+        "Titolo": "Montagnes Valdotaines",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 53,
+        "Gruppo_id": 1,
+        "Titolo": "Montenero",
+        "Armonizzazione": "rielaboraz. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 79,
+        "Gruppo_id": 1,
+        "Titolo": "Nella vecchia fattoria",
+        "Armonizzazione": "Giacobetti, Savona; Kramer; arrang. C. Favaro",
+        "Testo": ""
+    },
+    {
+        "id_canti": 42,
+        "Gruppo_id": 1,
+        "Titolo": "Non potho reposare",
+        "Armonizzazione": "G. Rachel; arm. M. Casula",
+        "Testo": ""
+    },
+    {
+        "id_canti": 55,
+        "Gruppo_id": 1,
+        "Titolo": "O Carlota",
+        "Armonizzazione": "arm. C. Vettorazzi",
+        "Testo": ""
+    },
+    {
+        "id_canti": 10,
+        "Gruppo_id": 1,
+        "Titolo": "O dime 'n po' bel giovo",
+        "Armonizzazione": "arm. Gino Mazzari",
+        "Testo": ""
+    },
+    {
+        "id_canti": 45,
+        "Gruppo_id": 1,
+        "Titolo": "O giardiniera",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 8,
+        "Gruppo_id": 1,
+        "Titolo": "O Rondolina",
+        "Armonizzazione": "arm. A. Agazzani",
+        "Testo": ""
+    },
+    {
+        "id_canti": 48,
+        "Gruppo_id": 1,
+        "Titolo": "Piccola Suite Infantile",
+        "Armonizzazione": "elaboraz. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 66,
+        "Gruppo_id": 1,
+        "Titolo": "Plaisir d'Amour",
+        "Armonizzazione": "G. Martini; arrang. Goff Richards",
+        "Testo": ""
+    },
+    {
+        "id_canti": 19,
+        "Gruppo_id": 1,
+        "Titolo": "Quando ero picolina",
+        "Armonizzazione": "arm. L. Chailly",
+        "Testo": ""
+    },
+    {
+        "id_canti": 25,
+        "Gruppo_id": 1,
+        "Titolo": "Se ti viene il mal di testa",
+        "Armonizzazione": "arm. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 30,
+        "Gruppo_id": 1,
+        "Titolo": "Senti 'l martelo",
+        "Armonizzazione": "arm. R. Dionisi",
+        "Testo": ""
+    },
+    {
+        "id_canti": 6,
+        "Gruppo_id": 1,
+        "Titolo": "Signore delle Cime",
+        "Armonizzazione": "Bepi De Marzi",
+        "Testo": ""
+    },
+    {
+        "id_canti": 2,
+        "Gruppo_id": 1,
+        "Titolo": "Sul Ciastel de Mirabel",
+        "Armonizzazione": "arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 70,
+        "Gruppo_id": 1,
+        "Titolo": "The lion sleeps tonight",
+        "Armonizzazione": "arm. V. Guerci",
+        "Testo": ""
+    },
+    {
+        "id_canti": 9,
+        "Gruppo_id": 1,
+        "Titolo": "Tre colombe bianche",
+        "Armonizzazione": "arm. A. Agazzani",
+        "Testo": ""
+    },
+    {
+        "id_canti": 57,
+        "Gruppo_id": 1,
+        "Titolo": "Voici venir la nuit",
+        "Armonizzazione": "arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 49,
+        "Gruppo_id": 1,
+        "Titolo": "W l'amor",
+        "Armonizzazione": "elaboraz. P. Bon",
+        "Testo": ""
+    },
+    {
+        "id_canti": 105,
+        "Gruppo_id": 2,
+        "Titolo": "Abendlied",
+        "Armonizzazione": "J. Rheinberger",
+        "Testo": ""
+    },
+    {
+        "id_canti": 107,
+        "Gruppo_id": 2,
+        "Titolo": "Abendstandchen",
+        "Armonizzazione": "J. Brahms",
+        "Testo": ""
+    },
+    {
+        "id_canti": 108,
+        "Gruppo_id": 2,
+        "Titolo": "All meine Herzgedanken",
+        "Armonizzazione": "J. Brahms",
+        "Testo": ""
+    },
+    {
+        "id_canti": 23,
+        "Gruppo_id": 2,
+        "Titolo": "Ave Maria",
+        "Armonizzazione": "J. Arcadelt",
+        "Testo": ""
+    },
+    {
+        "id_canti": 61,
+        "Gruppo_id": 2,
+        "Titolo": "Ave Maria",
+        "Armonizzazione": "F. L. Luciani",
+        "Testo": ""
+    },
+    {
+        "id_canti": 28,
+        "Gruppo_id": 2,
+        "Titolo": "Ave Verum",
+        "Armonizzazione": "W. A. Mozart",
+        "Testo": ""
+    },
+    {
+        "id_canti": 104,
+        "Gruppo_id": 2,
+        "Titolo": "Ave Verum",
+        "Armonizzazione": "W. Byrd",
+        "Testo": ""
+    },
+    {
+        "id_canti": 99,
+        "Gruppo_id": 2,
+        "Titolo": "Be still my soul",
+        "Armonizzazione": "testo di K. A. Von Schlegel; musica di J. Sibelius",
+        "Testo": ""
+    },
+    {
+        "id_canti": 111,
+        "Gruppo_id": 2,
+        "Titolo": "Beati quorum via",
+        "Armonizzazione": "C. V. Stanford",
+        "Testo": ""
+    },
+    {
+        "id_canti": 85,
+        "Gruppo_id": 2,
+        "Titolo": "Bogoroditse Devo, raduisya",
+        "Armonizzazione": "S. Rachmaninov",
+        "Testo": ""
+    },
+    {
+        "id_canti": 106,
+        "Gruppo_id": 2,
+        "Titolo": "Dein Herzlein mild",
+        "Armonizzazione": "J. Brahms",
+        "Testo": ""
+    },
+    {
+        "id_canti": 102,
+        "Gruppo_id": 2,
+        "Titolo": "Dem Dunkeln Schoss",
+        "Armonizzazione": "J. Brahms",
+        "Testo": ""
+    },
+    {
+        "id_canti": 89,
+        "Gruppo_id": 2,
+        "Titolo": "If ye love me",
+        "Armonizzazione": "T. Tallis",
+        "Testo": ""
+    },
+    {
+        "id_canti": 94,
+        "Gruppo_id": 2,
+        "Titolo": "Il bianco e dolce cigno",
+        "Armonizzazione": "J. Arcadelt",
+        "Testo": ""
+    },
+    {
+        "id_canti": 38,
+        "Gruppo_id": 2,
+        "Titolo": "Jesu Dulcis",
+        "Armonizzazione": "M. Gandini",
+        "Testo": ""
+    },
+    {
+        "id_canti": 27,
+        "Gruppo_id": 2,
+        "Titolo": "Jubilate Deo",
+        "Armonizzazione": "W. A. Mozart",
+        "Testo": ""
+    },
+    {
+        "id_canti": 14,
+        "Gruppo_id": 2,
+        "Titolo": "L'ange Gabriel annonce",
+        "Armonizzazione": "testo di J. P. Lecot; musica di N. Darros",
+        "Testo": ""
+    },
+    {
+        "id_canti": 103,
+        "Gruppo_id": 2,
+        "Titolo": "Letztes Gluck",
+        "Armonizzazione": "J. Brahms",
+        "Testo": ""
+    },
+    {
+        "id_canti": 63,
+        "Gruppo_id": 2,
+        "Titolo": "Luce gentile",
+        "Armonizzazione": "A. Ortolano; arm. G. Mazzaglia",
+        "Testo": ""
+    },
+    {
+        "id_canti": 97,
+        "Gruppo_id": 2,
+        "Titolo": "Lugsana",
+        "Armonizzazione": "R. Dubras",
+        "Testo": ""
+    },
+    {
+        "id_canti": 96,
+        "Gruppo_id": 2,
+        "Titolo": "O Magnum mysterium",
+        "Armonizzazione": "I. Antognini",
+        "Testo": ""
+    },
+    {
+        "id_canti": 92,
+        "Gruppo_id": 2,
+        "Titolo": "O Sacrum Convivium",
+        "Armonizzazione": "L. Molfino",
+        "Testo": ""
+    },
+    {
+        "id_canti": 40,
+        "Gruppo_id": 2,
+        "Titolo": "O Salutaris Hostia",
+        "Armonizzazione": "M. Gandini",
+        "Testo": ""
+    },
+    {
+        "id_canti": 59,
+        "Gruppo_id": 2,
+        "Titolo": "Oh mio Signore, ascolta!",
+        "Armonizzazione": "T. Albinoni; arm. L. Pietropoli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 64,
+        "Gruppo_id": 2,
+        "Titolo": "Preghiera",
+        "Armonizzazione": "R. Padoin",
+        "Testo": ""
+    },
+    {
+        "id_canti": 65,
+        "Gruppo_id": 2,
+        "Titolo": "Preghiera",
+        "Armonizzazione": "E. Wolf-Ferrari; arm. G. Castagna",
+        "Testo": ""
+    },
+    {
+        "id_canti": 41,
+        "Gruppo_id": 2,
+        "Titolo": "Sacris Solemnis",
+        "Armonizzazione": "M. Gandini",
+        "Testo": ""
+    },
+    {
+        "id_canti": 29,
+        "Gruppo_id": 2,
+        "Titolo": "Stabat Mater",
+        "Armonizzazione": "testo di Jacopone da Todi; musica di Z. Kodaly",
+        "Testo": ""
+    },
+    {
+        "id_canti": 39,
+        "Gruppo_id": 2,
+        "Titolo": "Tantum Ergo",
+        "Armonizzazione": "M. Gandini",
+        "Testo": ""
+    },
+    {
+        "id_canti": 101,
+        "Gruppo_id": 2,
+        "Titolo": "Totus tuus",
+        "Armonizzazione": "M. Frisina",
+        "Testo": ""
+    },
+    {
+        "id_canti": 100,
+        "Gruppo_id": 2,
+        "Titolo": "Ubi caritas",
+        "Armonizzazione": "O. Gjeilo",
+        "Testo": ""
+    },
+    {
+        "id_canti": 82,
+        "Gruppo_id": 3,
+        "Titolo": "Ambra",
+        "Armonizzazione": "R. Bertoldo",
+        "Testo": ""
+    },
+    {
+        "id_canti": 76,
+        "Gruppo_id": 3,
+        "Titolo": "Chitarra d'amor",
+        "Armonizzazione": "L. Schmidseder, R. Siegel; Arr. D. Runswick",
+        "Testo": ""
+    },
+    {
+        "id_canti": 93,
+        "Gruppo_id": 3,
+        "Titolo": "Esta Tierra",
+        "Armonizzazione": "testo di F. Pino; musica di J. Busto",
+        "Testo": ""
+    },
+    {
+        "id_canti": 110,
+        "Gruppo_id": 3,
+        "Titolo": "Hallelujah",
+        "Armonizzazione": "L. Cohen",
+        "Testo": ""
+    },
+    {
+        "id_canti": 80,
+        "Gruppo_id": 3,
+        "Titolo": "Il leon",
+        "Armonizzazione": "C. Favaro",
+        "Testo": ""
+    },
+    {
+        "id_canti": 75,
+        "Gruppo_id": 3,
+        "Titolo": "La luce del giorno",
+        "Armonizzazione": "testo di G. Pillonetto; musica di R. Padoin",
+        "Testo": ""
+    },
+    {
+        "id_canti": 90,
+        "Gruppo_id": 3,
+        "Titolo": "La Neige",
+        "Armonizzazione": "C. Favaro",
+        "Testo": ""
+    },
+    {
+        "id_canti": 87,
+        "Gruppo_id": 3,
+        "Titolo": "La Sera",
+        "Armonizzazione": "C. Favaro",
+        "Testo": ""
+    },
+    {
+        "id_canti": 62,
+        "Gruppo_id": 3,
+        "Titolo": "Miserere",
+        "Armonizzazione": "Zucchero - Bono; arm. G. Sportelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 98,
+        "Gruppo_id": 3,
+        "Titolo": "Northern Lights",
+        "Armonizzazione": "O. Gjeilo",
+        "Testo": ""
+    },
+    {
+        "id_canti": 109,
+        "Gruppo_id": 3,
+        "Titolo": "Sleep",
+        "Armonizzazione": "E. Whitacre",
+        "Testo": ""
+    },
+    {
+        "id_canti": 73,
+        "Gruppo_id": 3,
+        "Titolo": "Specchio",
+        "Armonizzazione": "testo di S. Quasimodo; musica di R. Bertoldo",
+        "Testo": ""
+    },
+    {
+        "id_canti": 91,
+        "Gruppo_id": 3,
+        "Titolo": "Yesterday",
+        "Armonizzazione": "J. Lennon, P. Mc Cartney",
+        "Testo": ""
+    },
+    {
+        "id_canti": 95,
+        "Gruppo_id": 3,
+        "Titolo": "You Are The New Day",
+        "Armonizzazione": "J. David - Arr. P. Knight",
+        "Testo": ""
+    },
+    {
+        "id_canti": 26,
+        "Gruppo_id": 4,
+        "Titolo": "Adeste fideles",
+        "Armonizzazione": "arm. R. Dionisi",
+        "Testo": ""
+    },
+    {
+        "id_canti": 37,
+        "Gruppo_id": 4,
+        "Titolo": "Astro del ciel",
+        "Armonizzazione": "arm. L. Molfino",
+        "Testo": ""
+    },
+    {
+        "id_canti": 50,
+        "Gruppo_id": 4,
+        "Titolo": "Ding dong! Merrily on high",
+        "Armonizzazione": "arm. C. Wood",
+        "Testo": ""
+    },
+    {
+        "id_canti": 35,
+        "Gruppo_id": 4,
+        "Titolo": "Gloria in cielo",
+        "Armonizzazione": "arm. G. Soli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 33,
+        "Gruppo_id": 4,
+        "Titolo": "I tre re dell'oriente",
+        "Armonizzazione": "arm. L. Pigarelli",
+        "Testo": ""
+    },
+    {
+        "id_canti": 72,
+        "Gruppo_id": 4,
+        "Titolo": "Joy to the world!",
+        "Armonizzazione": "L. Mason; arm. J. Rutter",
+        "Testo": ""
+    },
+    {
+        "id_canti": 34,
+        "Gruppo_id": 4,
+        "Titolo": "Notte di Luce",
+        "Armonizzazione": "J. Akepsimas",
+        "Testo": ""
+    },
+    {
+        "id_canti": 81,
+        "Gruppo_id": 4,
+        "Titolo": "Oggi e' Natale",
+        "Armonizzazione": "C. Favaro",
+        "Testo": ""
+    },
+    {
+        "id_canti": 36,
+        "Gruppo_id": 4,
+        "Titolo": "Tu scendi dalle stelle",
+        "Armonizzazione": "arm. V. Donella Carrara",
+        "Testo": ""
+    },
+    {
+        "id_canti": 17,
+        "Gruppo_id": 4,
+        "Titolo": "Venite o pastori",
+        "Armonizzazione": "arm. R. Dionisi",
+        "Testo": ""
+    }
+]

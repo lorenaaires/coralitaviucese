@@ -1,22 +1,39 @@
-<?php 	
-    require 'ConnectionVar.php';
-    $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
-    mysqli_set_charset($connessione, "utf8");
-    
-    
-    $concerto = $_POST["concerto"];
-    
-    if(isset(
-        $concerto["id_uscita"])){ $sql = "UPDATE registroUscite SET indirizzoFileVolantini='".$connessione->real_escape_string($concerto["indirizzoFileVolantini"])."', data_inizio='".$connessione->real_escape_string($concerto["data_inizio"])."', data_fine='".$connessione->real_escape_string($concerto["data_fine"])."',quandoDescrizione='".$connessione->real_escape_string($concerto["quandoDescrizione"])."',luogo_uscita='".$connessione->real_escape_string($concerto["luogo_uscita"])."',dettagli_uscita='".$connessione->real_escape_string($concerto["dettagli_uscita"])."' WHERE id_uscita=".$connessione->real_escape_string($concerto["id_uscita"]);
-    }else{  
-        $sql = "INSERT INTO registroUscite (data_inizio, data_fine,quandoDescrizione,luogo_uscita,dettagli_uscita) VALUES ('".$connessione->real_escape_string($concerto["data_inizio"])."','".$connessione->real_escape_string($concerto["data_fine"])."','".$connessione->real_escape_string($concerto["quandoDescrizione"])."','".$connessione->real_escape_string($concerto["luogo_uscita"])."','".$connessione->real_escape_string($concerto["dettagli_uscita"])."')";
+<?php
+
+require_once 'JsonStorage.php';
+
+$concerto = json_storage_get_post_array('concerto');
+if ($concerto === null) {
+    json_storage_output(0);
+    exit;
+}
+
+$concerti = json_storage_read('concerti.json', array());
+
+if (!isset($concerto['id_uscita']) || $concerto['id_uscita'] === '' || $concerto['id_uscita'] === null) {
+    $concerto['id_uscita'] = json_storage_next_id($concerti, 'id_uscita');
+}
+
+$concerto['id_uscita'] = intval($concerto['id_uscita']);
+
+if (!isset($concerto['indirizzoFileVolantini'])) {
+    $concerto['indirizzoFileVolantini'] = '';
+}
+
+$updated = false;
+foreach ($concerti as $index => $storedConcerto) {
+    if (isset($storedConcerto['id_uscita']) && intval($storedConcerto['id_uscita']) === $concerto['id_uscita']) {
+        $concerti[$index] = $concerto;
+        $updated = true;
+        break;
     }
-    
-    $result = mysqli_query($connessione, $sql);   
-    
-    if (!$result)
-        echo $connessione->error;
-    $connessione->close();
-    echo var_dump($result);
+}
+
+if (!$updated) {
+    $concerti[] = $concerto;
+}
+
+$result = json_storage_write('concerti.json', $concerti);
+json_storage_output($result ? 1 : 0);
 
 ?>

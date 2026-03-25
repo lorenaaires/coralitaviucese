@@ -1,17 +1,18 @@
-<?php 	
-    require 'ConnectionVar.php';
-    $connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
-    mysqli_set_charset($connessione, "utf8");
- 
-    //echo $_POST;
-    $infoCoro = $_POST["infoCoro"];
+<?php
 
-    $sql = "UPDATE informazioniSito SET  codiceFiscaleCoro = '".$connessione->real_escape_string($infoCoro["codiceFiscaleCoro"])."', indirizzoCoro = '".$connessione->real_escape_string($infoCoro["indirizzoCoro"])."', mailDirettore = '".$connessione->real_escape_string($infoCoro["mailDirettore"])."', mailPresidente = '".$connessione->real_escape_string($infoCoro["mailPresidente"])."', nomeCoro = '".$connessione->real_escape_string($infoCoro["nomeCoro"])."', nomeDirettore = '".$connessione->real_escape_string($infoCoro["nomeDirettore"])."', nomePresidente = '".$connessione->real_escape_string($infoCoro["nomePresidente"])."', telefonoDirettore = '".$connessione->real_escape_string($infoCoro["telefonoDirettore"])."', telefonoPresidente = '".$connessione->real_escape_string($infoCoro["telefonoPresidente"])."'";
-    
-    $result = mysqli_query($connessione, $sql);   
+require_once 'JsonStorage.php';
 
-    if (!$result)
-        echo $connessione->error;
-    $connessione->close();
-    echo var_dump($result);
+$infoCoro = json_storage_get_post_array('infoCoro');
+
+if ($infoCoro === null) {
+    json_storage_output(0);
+    exit;
+}
+
+if (!isset($infoCoro['idCoro'])) {
+    $infoCoro['idCoro'] = 1;
+}
+
+$result = json_storage_write('contatti.json', array($infoCoro));
+json_storage_output($result ? 1 : 0);
 ?>

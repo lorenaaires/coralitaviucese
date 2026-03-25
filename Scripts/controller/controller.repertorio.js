@@ -5,6 +5,7 @@
         $scope.greeting = 'Hola!';
         console.log($scope.greeting);
         $scope.tipologie = [];
+        $scope.tipologiaSelected = null;
         $scope.getTipologie = function () {
             $.ajax({
                 url: "api/Values/TipologieBrano.php",
@@ -12,6 +13,9 @@
 
                 success: function (data) {
                     $scope.tipologie = data;
+                    if ($scope.tipologie.length > 0 && !$scope.tipologiaSelected) {
+                        $scope.tipologiaSelected = $scope.tipologie[0].id_gruppo_repertorio;
+                    }
                     $scope.$apply();
 
                 },
@@ -33,8 +37,8 @@
                 success: function (data) {
                     $scope.brani = data;
                     
-                    if ($scope.brani.length > 0) {
-                        $scope.tipologiaSelected = $scope.tipologie.filter(a => a.descrizione_gruppo.toUpperCase().indexOf('CLASSICA') >= 0)[0].id_gruppo_repertorio;
+                    if (!$scope.tipologiaSelected && $scope.tipologie.length > 0) {
+                        $scope.tipologiaSelected = $scope.tipologie[0].id_gruppo_repertorio;
                     }
 
                     $scope.$apply();
