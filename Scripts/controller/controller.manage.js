@@ -9,9 +9,20 @@
       $scope.connectedUser = JSON.parse(localStorage.getItem('userConnected'));
     }
     $scope.concerti = [];
+    $scope.curricula = [];
+    $scope.mediaPhotos = [];
+    $scope.mediaAudio = [];
     $scope.hideContatti = true;
     $scope.hideRepertorio = true;
     $scope.hideConcerti = true;
+    $scope.assetUploads = {
+      cv: new FormData(),
+      photo: new FormData(),
+      audio: new FormData()
+    };
+    $scope.newCurriculum = { title: '' };
+    $scope.newPhoto = { descrizione: '' };
+    $scope.newAudio = { title: '' };
 
     $scope.tipologiaSelected = null;
     $('input[name="dates"]').daterangepicker({
@@ -209,6 +220,42 @@
 
     }
     $scope.getConcerti();
+    $scope.getCurricula = function () {
+      $.ajax({
+        url: "api/Values/Curricula.php",
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+          $scope.curricula = data || [];
+          $scope.$apply();
+        }
+      });
+    }
+    $scope.getMediaPhotos = function () {
+      $.ajax({
+        url: "api/Values/MediaPhotos.php",
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+          $scope.mediaPhotos = data || [];
+          $scope.$apply();
+        }
+      });
+    }
+    $scope.getMediaAudio = function () {
+      $.ajax({
+        url: "api/Values/MediaAudio.php",
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+          $scope.mediaAudio = data || [];
+          $scope.$apply();
+        }
+      });
+    }
+    $scope.getCurricula();
+    $scope.getMediaPhotos();
+    $scope.getMediaAudio();
     $scope.modificaConcerto = function (concerto) {
       $scope.selectedConcerto = concerto;
       $scope.selectedConcerto.data_inizio = new Date($scope.selectedConcerto.data_inizio);
@@ -244,6 +291,153 @@
     }
 
     $scope.fd = new FormData();
+    $scope.setManagedFile = function (files, collection) {
+      $scope.assetUploads[collection] = new FormData();
+      if (files && files[0]) {
+        $scope.assetUploads[collection].append("file", files[0]);
+        $scope.assetUploads[collection].append("collection", collection);
+      }
+    }
+    $scope.saveCurricula = function () {
+      $.post("api/Values/SaveCurricula.php", {
+        items: $scope.curricula
+      }, function (response) {
+        if (response == 1) {
+          $scope.getCurricula();
+          if ($scope.loadCurricula) {
+            $scope.loadCurricula();
+          }
+          alert("Curriculum salvati con successo");
+        }
+      }, 'json');
+    }
+    $scope.saveMediaPhotos = function () {
+      $.post("api/Values/SaveMediaPhotos.php", {
+        items: $scope.mediaPhotos
+      }, function (response) {
+        if (response == 1) {
+          $scope.getMediaPhotos();
+          if ($scope.loadMediaPhotos) {
+            $scope.loadMediaPhotos();
+          }
+          alert("Foto salvate con successo");
+        }
+      }, 'json');
+    }
+    $scope.saveMediaAudio = function () {
+      $.post("api/Values/SaveMediaAudio.php", {
+        items: $scope.mediaAudio
+      }, function (response) {
+        if (response == 1) {
+          $scope.getMediaAudio();
+          if ($scope.loadMediaAudio) {
+            $scope.loadMediaAudio();
+          }
+          alert("Audio salvati con successo");
+        }
+      }, 'json');
+    }
+    $scope.uploadManagedAsset = function (collection, callback) {
+      var formData = $scope.assetUploads[collection];
+      var hasFile = false;
+      formData.forEach(function () {
+        hasFile = true;
+      });
+
+      if (!hasFile) {
+        alert('Seleziona un file da caricare');
+        return;
+      }
+
+      $.ajax({
+        url: 'api/Values/UploadManagedFile.php',
+        data: formData,
+        cache: false,
+        contentType: false,
+        processData: false,
+        method: 'POST',
+        type: 'POST',
+        dataType: 'json',
+        success: function (data) {
+          if (!data || !data.success || !data.path) {
+            alert(data && data.message ? data.message : 'Upload non riuscito');
+            return;
+          }
+
+          $scope.assetUploads[collection] = new FormData();
+          callback(data.path, data.message);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          alert('Upload non riuscito');
+          console.log(textStatus, errorThrown);
+          console.log(jqXHR.responseText);
+        }
+      });
+    }
+    $scope.addCurriculum = function () {
+      if (!$scope.newCurriculum.title) {
+        alert('Inserisci il titolo del curriculum');
+        return;
+      }
+
+      $scope.uploadManagedAsset('cv', function (path, message) {
+        $scope.curricula.push({
+          title: $scope.newCurriculum.title,
+          path: path
+        });
+        $scope.newCurriculum = { title: '' };
+        $scope.$apply(function () {
+          $scope.saveCurricula();
+        });
+        if (message) {
+          alert(message);
+        }
+      });
+    }
+    $scope.addMediaPhoto = function () {
+      $scope.uploadManagedAsset('photo', function (path, message) {
+        $scope.mediaPhotos.push({
+          descrizione: $scope.newPhoto.descrizione || '',
+          url: path
+        });
+        $scope.newPhoto = { descrizione: '' };
+        $scope.$apply(function () {
+          $scope.saveMediaPhotos();
+        });
+        if (message) {
+          alert(message);
+        }
+      });
+    }
+    $scope.addMediaAudio = function () {
+      if (!$scope.newAudio.title) {
+        alert('Inserisci il titolo dell\'audio');
+        return;
+      }
+
+      $scope.uploadManagedAsset('audio', function (path, message) {
+        $scope.mediaAudio.push({
+          title: $scope.newAudio.title,
+          path: path
+        });
+        $scope.newAudio = { title: '' };
+        $scope.$apply(function () {
+          $scope.saveMediaAudio();
+        });
+        if (message) {
+          alert(message);
+        }
+      });
+    }
+    $scope.removeCurriculum = function (index) {
+      $scope.curricula.splice(index, 1);
+    }
+    $scope.removeMediaPhoto = function (index) {
+      $scope.mediaPhotos.splice(index, 1);
+    }
+    $scope.removeMediaAudio = function (index) {
+      $scope.mediaAudio.splice(index, 1);
+    }
 
     $scope.getTheDoc = function (files) {
 

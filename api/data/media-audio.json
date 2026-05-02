@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "Ave Maria - F. Biebl",
+        "path": "Media/audio/Ave Maria - F. Biebl.mp3"
+    },
+    {
+        "id": 2,
+        "title": "Lux Aeterna - Edward Elgar",
+        "path": "Media/audio/Lux Aeterna.mp3"
+    },
+    {
+        "id": 3,
+        "title": "O Jesu Dolce - B. Bettinelli",
+        "path": "Media/audio/O Jesu Dolce.mp3"
+    },
+    {
+        "id": 4,
+        "title": "The Seal Lullaby - E. Whitacre",
+        "path": "Media/audio/The Seal Lullaby.mp3"
+    },
+    {
+        "id": 5,
+        "title": "When we love - Elaine Hagenberg",
+        "path": "Media/audio/When we love.mp3"
+    },
+    {
+        "id": 6,
+        "title": "Lugsana - R. Dubra",
+        "path": "Media/audio/Lugsana.mp3"
+    },
+    {
+        "id": 7,
+        "title": "Ave Maria - F. L. Luciani",
+        "path": "Media/audio/AveMariaLemie.mp3"
+    },
+    {
+        "id": 8,
+        "title": "O Magnum Mysterium - I. Antognini",
+        "path": "Media/audio/O_Magnum_Misterium.mp3"
+    },
+    {
+        "id": 9,
+        "title": "Specchio - R. Bertoldo",
+        "path": "Media/audio/Specchio_2016.mp3"
+    },
+    {
+        "id": 10,
+        "title": "Yesterday - J. Lennon, P. McCartney",
+        "path": "Media/audio/yesterday_Toscana.MP3"
+    },
+    {
+        "id": 11,
+        "title": "Montagne Addio - G. Bregani; arm. L. Pietropoli",
+        "path": "Media/audio/montagneAddio_Toscana.MP3"
+    },
+    {
+        "id": 12,
+        "title": "Cortesani - B. De Marzi",
+        "path": "Media/audio/cortesani_Toscana.MP3"
+    },
+    {
+        "id": 13,
+        "title": "An Irish Bleassing - arrang. J. E. Moore Jr.",
+        "path": "Media/audio/AnIrishBleassing_Spagna.mp3"
+    },
+    {
+        "id": 14,
+        "title": "O Sacrum Convivium - L. Molfino",
+        "path": "Media/audio/OSacrumConvivium_Spagna.mp3"
+    },
+    {
+        "id": 15,
+        "title": "Preghiera - R. Padoin",
+        "path": "Media/audio/Preghiera_Spagna.mp3"
+    },
+    {
+        "id": 16,
+        "title": "La Montanara - T. Ortelli",
+        "path": "Media/audio/Montanara_Lemie.mp3"
+    },
+    {
+        "id": 17,
+        "title": "Il Bianco E Dolce Cigno - J. Arcadelt",
+        "path": "Media/audio/Vallo_ilBiancoEDolceCigno.mp3"
+    },
+    {
+        "id": 18,
+        "title": "Esta Tierra - Javier Busto su poesia di Francisco Pino",
+        "path": "Media/audio/Vallo_estaTierra.mp3"
+    },
+    {
+        "id": 19,
+        "title": "La neige - C. Favaro",
+        "path": "Media/audio/Vallo_LaNeige.mp3"
+    },
+    {
+        "id": 20,
+        "title": "Signore Delle Cime - B. De Marzi",
+        "path": "Media/audio/Vallo_SignoreDelleCime.mp3"
+    },
+    {
+        "id": 21,
+        "title": "A L'Ombra Do Foo - P. Fornelli arm. Provera",
+        "path": "Media/audio/parigi_ALombraDloFo.mp3"
+    },
+    {
+        "id": 22,
+        "title": "You Are The New Day - J. David - Arr. P. Knight",
+        "path": "Media/audio/Viu_YouAreTheNewDay.mp3"
+    },
+    {
+        "id": 23,
+        "title": "Ambra - R. Bertoldo",
+        "path": "Media/audio/Viu_Ambra.MP3"
+    },
+    {
+        "id": 24,
+        "title": "Bogoroditse Devo - S. Rachmaninov",
+        "path": "Media/audio/BogoroDitseDevo_Roma.mp3"
+    }
+]

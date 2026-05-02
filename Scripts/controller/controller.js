@@ -21,22 +21,12 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
         nickname: '',
         password: ''
     };
+    $scope.curricula = [];
+    $scope.mediaPhotos = [];
+    $scope.mediaAudio = [];
     
     //$scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'FOTO', 'AUDIO', 'VIDEO'];
     $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'MEDIA'];
-    $scope.fotoCoro = [
-        { url: 'img/big/gruppo_2024_2.JPG', descrizione: '2024 - Teramo' },
-        { url: 'img/big/gruppo_2024_3.JPG', descrizione: '2024 - Parma' },
-        { url: 'img/big/gruppo_2024_4.JPG', descrizione: '2024 - Parma' },
-        { url: 'img/big/gruppo_2024_5.JPG', descrizione: '2024 - Parma' },
-        { url: 'img/big/gruppo_2024.JPG', descrizione: '2024 - San Marino' },
-        { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
-        { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
-        { url: 'img/big/gruppo2017-big.jpg', descrizione: '2017' },
-        { url: 'img/big/gruppo2016-big.jpg', descrizione: '2016' },
-        { url: 'img/big/gruppo2015-big.jpg', descrizione: '2015' },
-        { url: 'img/big/gruppo2014-big.jpg', descrizione: '2014' }
-    ]
 
     $scope.tipologiaSelected = 'Canti Popolari e di montagna';
 
@@ -70,6 +60,43 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     $scope.showModalLogin = function() {
         $('#modalLogin').modal('show');
     }
+    $scope.loadCurricula = function() {
+        $.ajax({
+            url: "api/Values/Curricula.php",
+            type: "POST",
+            dataType: 'json',
+            success: function(data) {
+                $scope.curricula = data || [];
+                $scope.$apply();
+            }
+        });
+    }
+    $scope.loadMediaPhotos = function() {
+        $.ajax({
+            url: "api/Values/MediaPhotos.php",
+            type: "POST",
+            dataType: 'json',
+            success: function(data) {
+                $scope.mediaPhotos = data || [];
+                $scope.fotoCoro = $scope.mediaPhotos;
+                $scope.$apply();
+            }
+        });
+    }
+    $scope.loadMediaAudio = function() {
+        $.ajax({
+            url: "api/Values/MediaAudio.php",
+            type: "POST",
+            dataType: 'json',
+            success: function(data) {
+                $scope.mediaAudio = data || [];
+                $scope.$apply();
+            }
+        });
+    }
+    $scope.loadCurricula();
+    $scope.loadMediaPhotos();
+    $scope.loadMediaAudio();
     $scope.login = function() {
         $.ajax({
             url: "api/Values/Login.php",

@@ -60,17 +60,12 @@
                 <div class="col-md-8 offset-md-2 ">
 
                     <div class="form-group">
+                        <div data-ng-if="!curricula || curricula.length==0">Nessun curriculum disponibile.</div>
 
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <span class="col-md-3"><a target="_blank" href="download/Coralita_CV_2018.pdf"><i class="fa fa-download"></i></a></span>
-                                <span class="col-md-9"><a target="_blank" href="download/Coralita_CV_2018.pdf">Curriculum Breve</a></span>
-
-                            </li>
-                            <li class="list-group-item">
-                                <span class="col-md-3"><a target="_blank" href="download/CV_coralita_viucese_francais_2014.pdf"><i class="fa fa-download"></i></a></span>
-                                <span class="col-md-9"><a target="_blank" href="download/CV_coralita_viucese_francais_2014.pdf">Curriculum Fran&ccedil;ais</a> </span>
-
+                        <ul class="list-group" data-ng-if="curricula && curricula.length > 0">
+                            <li class="list-group-item" data-ng-repeat="cv in curricula">
+                                <span class="col-md-3"><a target="_blank" ng-href="{{cv.path}}"><i class="fa fa-download"></i></a></span>
+                                <span class="col-md-9"><a target="_blank" ng-href="{{cv.path}}">{{cv.title}}</a></span>
                             </li>
                         </ul>
                     </div>

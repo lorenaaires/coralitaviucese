@@ -15,6 +15,15 @@
                             <li class="nav-item cursor">
                                 <a class="nav-link" ng-click="tabSelected='concerti'" ng-class="{'active':tabSelected=='concerti'}">Concerti</a>
                             </li>
+                            <li class="nav-item cursor">
+                                <a class="nav-link" ng-click="tabSelected='cv'" ng-class="{'active':tabSelected=='cv'}">CV</a>
+                            </li>
+                            <li class="nav-item cursor">
+                                <a class="nav-link" ng-click="tabSelected='foto'" ng-class="{'active':tabSelected=='foto'}">Foto</a>
+                            </li>
+                            <li class="nav-item cursor">
+                                <a class="nav-link" ng-click="tabSelected='audio'" ng-class="{'active':tabSelected=='audio'}">Audio</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="box box-info" ng-show="tabSelected=='contatti'">
@@ -156,6 +165,123 @@
                             </div>
                         </div>
                         <!-- /.box-footer -->
+                    </div>
+                    <div class="box box-info" ng-show="tabSelected=='cv'">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Curriculum</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" data-ng-model="newCurriculum.title" placeholder="Titolo curriculum" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="file" class="form-control" onchange="angular.element(this).scope().setManagedFile(this.files, 'cv')" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-primary" data-ng-click="addCurriculum()">Carica</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item" data-ng-repeat="cv in curricula track by $index">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" data-ng-model="cv.title" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a target="_blank" ng-href="{{cv.path}}">{{cv.path}}</a>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeCurriculum($index)">Rimuovi</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer clearfix">
+                            <button type="button" class="btn btn-primary" data-ng-click="saveCurricula()">SALVA CV</button>
+                        </div>
+                    </div>
+                    <div class="box box-info" ng-show="tabSelected=='foto'">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Foto Media</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" data-ng-model="newPhoto.descrizione" placeholder="Descrizione foto" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="file" class="form-control" onchange="angular.element(this).scope().setManagedFile(this.files, 'photo')" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-primary" data-ng-click="addMediaPhoto()">Carica</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item" data-ng-repeat="foto in mediaPhotos track by $index">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <input type="text" class="form-control" data-ng-model="foto.descrizione" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a target="_blank" ng-href="{{foto.url}}">{{foto.url}}</a>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <img data-ng-src="{{foto.url}}" alt="" style="max-width:40px; max-height:40px;" />
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeMediaPhoto($index)">Rimuovi</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer clearfix">
+                            <button type="button" class="btn btn-primary" data-ng-click="saveMediaPhotos()">SALVA FOTO</button>
+                        </div>
+                    </div>
+                    <div class="box box-info" ng-show="tabSelected=='audio'">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Audio</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" data-ng-model="newAudio.title" placeholder="Titolo audio" />
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="file" class="form-control" onchange="angular.element(this).scope().setManagedFile(this.files, 'audio')" />
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-primary" data-ng-click="addMediaAudio()">Carica</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item" data-ng-repeat="audio in mediaAudio track by $index">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control" data-ng-model="audio.title" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a target="_blank" ng-href="{{audio.path}}">{{audio.path}}</a>
+                                        </div>
+                                        <div class="col-md-2 text-right">
+                                            <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeMediaAudio($index)">Rimuovi</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer clearfix">
+                            <button type="button" class="btn btn-primary" data-ng-click="saveMediaAudio()">SALVA AUDIO</button>
+                        </div>
                     </div>
                 </div>
             </div>
