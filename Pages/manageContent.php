@@ -1,9 +1,9 @@
 ﻿<div data-ng-controller="myControllerManage">
     <div data-ng-if="connectedUser && connectedUser.nickname">
 
-        <div class="container" style="margin-top: 90px;" ng-init="tabSelected='contatti'">
+        <div class="container manage-container" style="margin-top: 90px;" ng-init="tabSelected='contatti'">
             <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
+                <div class="col-md-12 text-center">
                     <div class="col-md-12 pb-3">
                         <ul class="nav nav-pills">
                             <li class="nav-item cursor">
@@ -186,14 +186,14 @@
                             </div>
                             <ul class="list-group">
                                 <li class="list-group-item" data-ng-repeat="cv in curricula track by $index">
-                                    <div class="row">
-                                        <div class="col-md-6">
+                                    <div class="manage-list-row">
+                                        <div class="manage-field manage-field-title">
                                             <input type="text" class="form-control" data-ng-model="cv.title" />
                                         </div>
-                                        <div class="col-md-4">
-                                            <a target="_blank" ng-href="{{cv.path}}">{{cv.path}}</a>
+                                        <div class="manage-field manage-field-link">
+                                            <a class="manage-link" target="_blank" ng-href="{{cv.path}}">{{cv.path}}</a>
                                         </div>
-                                        <div class="col-md-2 text-right">
+                                        <div class="manage-actions">
                                             <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeCurriculum($index)">Rimuovi</button>
                                         </div>
                                     </div>
@@ -224,17 +224,17 @@
                             </div>
                             <ul class="list-group">
                                 <li class="list-group-item" data-ng-repeat="foto in mediaPhotos track by $index">
-                                    <div class="row">
-                                        <div class="col-md-5">
+                                    <div class="manage-list-row">
+                                        <div class="manage-field manage-field-title">
                                             <input type="text" class="form-control" data-ng-model="foto.descrizione" />
                                         </div>
-                                        <div class="col-md-4">
-                                            <a target="_blank" ng-href="{{foto.url}}">{{foto.url}}</a>
+                                        <div class="manage-field manage-field-link">
+                                            <a class="manage-link" target="_blank" ng-href="{{foto.url}}">{{foto.url}}</a>
                                         </div>
-                                        <div class="col-md-1">
+                                        <div class="manage-thumb">
                                             <img data-ng-src="{{foto.url}}" alt="" style="max-width:40px; max-height:40px;" />
                                         </div>
-                                        <div class="col-md-2 text-right">
+                                        <div class="manage-actions">
                                             <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeMediaPhoto($index)">Rimuovi</button>
                                         </div>
                                     </div>
@@ -265,14 +265,14 @@
                             </div>
                             <ul class="list-group">
                                 <li class="list-group-item" data-ng-repeat="audio in mediaAudio track by $index">
-                                    <div class="row">
-                                        <div class="col-md-6">
+                                    <div class="manage-list-row">
+                                        <div class="manage-field manage-field-title">
                                             <input type="text" class="form-control" data-ng-model="audio.title" />
                                         </div>
-                                        <div class="col-md-4">
-                                            <a target="_blank" ng-href="{{audio.path}}">{{audio.path}}</a>
+                                        <div class="manage-field manage-field-link">
+                                            <a class="manage-link" target="_blank" ng-href="{{audio.path}}">{{audio.path}}</a>
                                         </div>
-                                        <div class="col-md-2 text-right">
+                                        <div class="manage-actions">
                                             <button type="button" class="btn btn-danger btn-sm" data-ng-click="removeMediaAudio($index)">Rimuovi</button>
                                         </div>
                                     </div>
@@ -459,6 +459,51 @@
 </script>
 
 <style>
+    .manage-container {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .manage-list-row {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .manage-field {
+        min-width: 0;
+    }
+
+    .manage-field-title {
+        flex: 0 0 34%;
+    }
+
+    .manage-field-link {
+        flex: 1 1 auto;
+        text-align: left;
+    }
+
+    .manage-link {
+        display: block;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .manage-thumb {
+        flex: 0 0 56px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manage-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+        text-align: right;
+        flex: 0 0 110px;
+    }
+
     .uib-year .btn-default {
         background-color: #ffa500a3;
         font-size: 10px
@@ -483,5 +528,31 @@
     .uib-datepicker .uib-title {
         width: 100%;
         background-color: orange;
+    }
+
+    @media (max-width: 991px) {
+        .manage-container {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .manage-actions {
+            margin-top: 10px;
+            margin-left: 0;
+            flex: 0 0 auto;
+            justify-content: flex-start;
+        }
+
+        .manage-list-row {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        .manage-field-title,
+        .manage-field-link,
+        .manage-thumb {
+            flex: 0 0 auto;
+        }
     }
 </style>
