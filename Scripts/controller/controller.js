@@ -17,6 +17,10 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
         localStorage.removeItem('userConnected');
     }
     $scope.connectedUser = JSON.parse(localStorage.getItem('userConnected'));
+    $scope.tempUser = {
+        nickname: '',
+        password: ''
+    };
     
     //$scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'FOTO', 'AUDIO', 'VIDEO'];
     $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'MEDIA'];
@@ -37,6 +41,12 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     $scope.tipologiaSelected = 'Canti Popolari e di montagna';
 
     $scope.changePage = function(pagina) {
+        if (pagina === 'MANAGE' && (!$scope.connectedUser || !$scope.connectedUser.nickname)) {
+            $scope.pageSelected = 'HOME';
+            localStorage.setItem('page', 'HOME');
+            $('#modalLogin').modal('show');
+            return;
+        }
         $scope.pageSelected = pagina;
         localStorage.setItem('page', pagina);
         $('html').removeClass('nav-open');
@@ -70,10 +80,22 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
                 password: $scope.tempUser.password
             }),
             success: function(data) {
-                if (data) {
-                    $scope.connectedUser = data[0];
+                if (data && data.length > 0) {
+                    $scope.$apply(function() {
+                        $scope.connectedUser = data[0];
+                        localStorage.setItem('userConnected', JSON.stringify($scope.connectedUser));
+                        $scope.tempUser = {
+                            nickname: '',
+                            password: ''
+                        };
+                        $scope.changePage('MANAGE');
+                    });
+                } else {
+                    localStorage.removeItem('userConnected');
+                    $scope.connectedUser = null;
+                    $scope.tempUser.password = '';
                     $scope.$apply();
-                    localStorage.setItem('userConnected', JSON.stringify($scope.connectedUser));
+                    alert('Credenziali non valide');
                 }
 
             },
@@ -97,12 +119,18 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
                     $scope.connectedUser = null;
                     $scope.$apply();
                     localStorage.removeItem('userConnected');
+                    if ($scope.pageSelected === 'MANAGE') {
+                        $scope.changePage('HOME');
+                    }
                     // globalService.setUser(null);
 
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     $scope.connectedUser = null;
                     localStorage.removeItem('userConnected');
+                    if ($scope.pageSelected === 'MANAGE') {
+                        $scope.changePage('HOME');
+                    }
                     console.log(textStatus, errorThrown);
                     console.log(jqXHR.responseText);
                 }
@@ -110,6 +138,9 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
         } else {
             $scope.connectedUser = null;
             localStorage.removeItem('userConnected');
+            if ($scope.pageSelected === 'MANAGE') {
+                $scope.changePage('HOME');
+            }
         }
     }
 }

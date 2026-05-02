@@ -5,6 +5,12 @@ require_once 'JsonStorage.php';
 $concerti = json_storage_read('concerti.json', array());
 $anno = isset($_POST['anno']) ? $_POST['anno'] : date('Y');
 
+foreach ($concerti as $index => $concerto) {
+    if (isset($concerto['indirizzoFileVolantini'])) {
+        $concerti[$index]['indirizzoFileVolantini'] = json_storage_normalize_volantino_path($concerto['indirizzoFileVolantini']);
+    }
+}
+
 usort($concerti, function ($left, $right) {
     return strcmp($right['data_fine'], $left['data_fine']);
 });

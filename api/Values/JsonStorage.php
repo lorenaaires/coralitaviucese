@@ -10,7 +10,7 @@ function json_storage_path($fileName)
 function json_storage_ensure_dir()
 {
     if (!is_dir(JSON_STORAGE_DIR)) {
-        mkdir(JSON_STORAGE_DIR, 0777, true);
+        @mkdir(JSON_STORAGE_DIR, 0777, true);
     }
 }
 
@@ -48,7 +48,18 @@ function json_storage_write($fileName, $data)
         return false;
     }
 
-    return file_put_contents($path, $json . PHP_EOL, LOCK_EX) !== false;
+    $directory = dirname($path);
+    if (!is_dir($directory) || !is_writable($directory)) {
+        error_log('JSON storage directory is not writable: ' . $directory);
+        return false;
+    }
+
+    if (file_exists($path) && !is_writable($path)) {
+        error_log('JSON storage file is not writable: ' . $path);
+        return false;
+    }
+
+    return @file_put_contents($path, $json . PHP_EOL, LOCK_EX) !== false;
 }
 
 function json_storage_get_post_array($key)
@@ -79,3 +90,27 @@ function json_storage_output($data)
     echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 }
 
+function json_storage_normalize_volantino_path($path)
+{
+    if (!is_string($path)) {
+        return '';
+    }
+
+    $decodedPath = html_entity_decode($path, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    $decodedPath = trim($decodedPath);
+
+    if ($decodedPath === '') {
+        return '';
+    }
+
+    if (preg_match('#/?Doc_Volantini/[^"\r\n]+#', $decodedPath, $matches)) {
+        return ltrim($matches[0], '/');
+    }
+
+    $decodedPath = trim($decodedPath, " \t\n\r\0\x0B\"'");
+    if ($decodedPath === '') {
+        return '';
+    }
+
+    return ltrim($decodedPath, '/');
+}

@@ -5,7 +5,9 @@
     $compile, $location, $window, $anchorScroll, $http,
     $rootScope, globalService) {
 
-    $scope.connectedUser = JSON.parse(localStorage.getItem('userConnected'));
+    if (!$scope.connectedUser || !$scope.connectedUser.nickname) {
+      $scope.connectedUser = JSON.parse(localStorage.getItem('userConnected'));
+    }
     $scope.concerti = [];
     $scope.hideContatti = true;
     $scope.hideRepertorio = true;
@@ -166,13 +168,27 @@
           contentType: false,
           processData: false,
           method: 'POST',
+          dataType: 'json',
           type: 'POST', // For jQuery < 1.9
           success: function (data) {
-            concerto.indirizzoFileVolantini = '/Doc_Volantini/' + data;
+            if (!data || !data.success || !data.fileName) {
+              alert(data && data.message ? data.message : 'Upload non riuscito');
+              return;
+            }
+
+            concerto.indirizzoFileVolantini = 'Doc_Volantini/' + data.fileName;
+            $scope.fd = new FormData();
             $scope.updateConcerto(concerto);
-            //alert(data);
+            if (data.message) {
+              alert(data.message);
+            }
             $scope.getConcerti();
             console.log(data);
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+            alert('Upload non riuscito');
+            console.log(textStatus, errorThrown);
+            console.log(jqXHR.responseText);
           }
         });
       } else {

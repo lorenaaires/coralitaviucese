@@ -1,5 +1,5 @@
 ﻿<div data-ng-controller="myControllerManage">
-    <div data-ng-hide="connectedUser==''">
+    <div data-ng-if="connectedUser && connectedUser.nickname">
 
         <div class="container" style="margin-top: 90px;" ng-init="tabSelected='contatti'">
             <div class="row">
@@ -160,6 +160,10 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container text-center" style="margin-top: 90px;" data-ng-if="!connectedUser || !connectedUser.nickname">
+        <p>Effettua il login per accedere all'area di modifica.</p>
     </div>
 
     <div class="modal fade" id="modalModConcerto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

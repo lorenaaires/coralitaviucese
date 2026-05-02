@@ -1,30 +1,17 @@
 <?php
-function utf8ize($d) {
-    if (is_array($d)) {
-        foreach ($d as $k => $v) {
-            $d[$k] = utf8ize($v);
-        }
-    } else if (is_string ($d)) {
-        return utf8_encode($d);
-    }
-    return $d;
-}
+require_once 'UserStorage.php';
 
 $_SESSION["logged"] = false;
 $_SESSION["logged_username"] = null;
 
-require 'ConnectionVar.php';
-$connessione = mysqli_connect($host,$user,$password,$dbname) or die("errore di connessione");
-mysqli_set_charset($connessione, "utf8");
+$username = isset($_POST["username"]) ? trim($_POST["username"]) : '';
+$users = user_storage_read();
+$userIndex = user_storage_find_index_by_nickname($users, $username);
 
-$username = $_POST["username"];
+if ($userIndex >= 0) {
+    $users[$userIndex]['auth_key'] = '';
+    user_storage_write($users);
+}
 
-$sqlUpdate = "UPDATE loginCoro SET auth_key='null'  WHERE nickname='".$username."'";
-$result = mysqli_query($connessione, $sqlUpdate);
-
-$connessione->close();
-	
-$array = array();
-
-echo json_encode(utf8ize($array));
+json_storage_output(array());
 ?>

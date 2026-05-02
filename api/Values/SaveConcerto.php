@@ -20,6 +20,8 @@ if (!isset($concerto['indirizzoFileVolantini'])) {
     $concerto['indirizzoFileVolantini'] = '';
 }
 
+$concerto['indirizzoFileVolantini'] = json_storage_normalize_volantino_path($concerto['indirizzoFileVolantini']);
+
 $updated = false;
 foreach ($concerti as $index => $storedConcerto) {
     if (isset($storedConcerto['id_uscita']) && intval($storedConcerto['id_uscita']) === $concerto['id_uscita']) {
