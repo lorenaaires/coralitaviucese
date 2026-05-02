@@ -63,10 +63,10 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="css/now-ui-kit-v1.0.1/assets/img/blurred-image-1.jpg">
 
-                <ul class="navbar-nav" data-ng-init="changePage('HOME')">
+                <ul class="navbar-nav">
 
-                    <li class="nav-item " data-ng-repeat="pagina in arrayPages" data-ng-click="changePage(pagina)" data-ng-class="{'active':pageSelected==pagina}">
-                        <a class="nav-link" href="#">{{pagina}}</a>
+                    <li class="nav-item " data-ng-repeat="pagina in arrayPages" data-ng-class="{'active':pageSelected==pagina}">
+                        <a class="nav-link cursor" href="javascript:void(0)" data-ng-click="changePage(pagina)">{{pagina}}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/Coralit%C3%A0-Viucese-109583518079/" target="_blank" data-original-title="Metti mi piace su Facebook">

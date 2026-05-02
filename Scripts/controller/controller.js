@@ -29,23 +29,110 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     $scope.arrayPages = ['HOME', 'LA STORIA', 'REPERTORIO', 'CONCERTI', 'CONTATTI', 'MEDIA'];
 
     $scope.tipologiaSelected = 'Canti Popolari e di montagna';
+    $scope.manageTabSelected = 'contatti';
 
-    $scope.changePage = function(pagina) {
+    $scope.normalizePageName = function(pagina) {
+        return (pagina || 'HOME').toUpperCase();
+    }
+
+    $scope.parseRouteState = function() {
+        var hash = ($window.location.hash || '').replace(/^#/, '');
+        hash = hash.replace(/^!/, '');
+        hash = hash.replace(/^#/, '');
+        hash = hash.replace(/^\//, '');
+        var state = {
+            page: 'HOME',
+            tab: 'contatti'
+        };
+
+        if (!hash) {
+            return state;
+        }
+
+        var parts = hash.split('/');
+        if (parts[0]) {
+            state.page = decodeURIComponent(parts[0]).toUpperCase();
+        }
+        if (parts.length > 1 && parts[1]) {
+            state.tab = decodeURIComponent(parts[1]).toLowerCase();
+        }
+
+        return state;
+    }
+
+    $scope.updateRouteState = function(pagina, tab) {
+        var normalizedPage = $scope.normalizePageName(pagina);
+        var hash = encodeURIComponent(normalizedPage);
+
+        if (normalizedPage === 'MANAGE' && tab) {
+            hash += '/' + encodeURIComponent(tab.toLowerCase());
+        }
+
+        var currentHash = ($window.location.hash || '').replace(/^#/, '');
+        currentHash = currentHash.replace(/^!/, '');
+        currentHash = currentHash.replace(/^#/, '');
+        currentHash = currentHash.replace(/^\//, '');
+
+        if (currentHash !== hash) {
+            $window.location.hash = '!' + hash;
+        }
+    }
+
+    $scope.changePage = function(pagina, options) {
+        options = options || {};
+        pagina = $scope.normalizePageName(pagina);
+
         if (pagina === 'MANAGE' && (!$scope.connectedUser || !$scope.connectedUser.nickname)) {
             $scope.pageSelected = 'HOME';
             localStorage.setItem('page', 'HOME');
+            if (!options.skipHashUpdate) {
+                $scope.updateRouteState('HOME');
+            }
             $('#modalLogin').modal('show');
             return;
         }
+
         $scope.pageSelected = pagina;
         localStorage.setItem('page', pagina);
+
+        if (pagina !== 'MANAGE') {
+            $scope.manageTabSelected = 'contatti';
+        }
+
+        if (!options.skipHashUpdate) {
+            $scope.updateRouteState(pagina, pagina === 'MANAGE' ? $scope.manageTabSelected : null);
+        }
+
         $('html').removeClass('nav-open');
         $toggle = $('.navbar-toggler');
         $toggle.removeClass('toggled');
 
     }
 
-    if (localStorage.getItem('page')) {
+    $scope.setManageTab = function(tab, options) {
+        options = options || {};
+        $scope.manageTabSelected = (tab || 'contatti').toLowerCase();
+
+        if ($scope.pageSelected === 'MANAGE' && !options.skipHashUpdate) {
+            $scope.updateRouteState('MANAGE', $scope.manageTabSelected);
+        }
+    }
+
+    $scope.applyRouteState = function() {
+        var routeState = $scope.parseRouteState();
+        $scope.setManageTab(routeState.tab, { skipHashUpdate: true });
+
+        if (routeState.page === 'MANAGE' && (!$scope.connectedUser || !$scope.connectedUser.nickname)) {
+            $scope.changePage('HOME');
+            return;
+        }
+
+        $scope.changePage(routeState.page, { skipHashUpdate: true });
+    }
+
+    if (($window.location.hash || '').replace(/^#/, '')) {
+        $scope.applyRouteState();
+    } else if (localStorage.getItem('page')) {
         $scope.changePage(localStorage.getItem('page'));
     } else {
         $scope.changePage("HOME");
@@ -97,6 +184,11 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     $scope.loadCurricula();
     $scope.loadMediaPhotos();
     $scope.loadMediaAudio();
+    angular.element($window).on('hashchange', function() {
+        $scope.$applyAsync(function() {
+            $scope.applyRouteState();
+        });
+    });
     $scope.login = function() {
         $.ajax({
             url: "api/Values/Login.php",

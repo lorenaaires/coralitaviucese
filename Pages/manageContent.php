@@ -1,28 +1,28 @@
 ﻿<div data-ng-controller="myControllerManage">
     <div data-ng-if="connectedUser && connectedUser.nickname">
 
-        <div class="container manage-container" style="margin-top: 90px;" ng-init="tabSelected='contatti'">
+        <div class="container manage-container" style="margin-top: 90px;" ng-init="initManageTab()">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="col-md-12 pb-3">
                         <ul class="nav nav-pills">
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='contatti'" ng-class="{'active':tabSelected=='contatti'}">Contatti</a>
+                                <a class="nav-link" ng-click="selectManageTab('contatti')" ng-class="{'active':tabSelected=='contatti'}">Contatti</a>
                             </li>
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='brani'" ng-class="{'active':tabSelected=='brani'}">Brani</a>
+                                <a class="nav-link" ng-click="selectManageTab('brani')" ng-class="{'active':tabSelected=='brani'}">Brani</a>
                             </li>
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='concerti'" ng-class="{'active':tabSelected=='concerti'}">Concerti</a>
+                                <a class="nav-link" ng-click="selectManageTab('concerti')" ng-class="{'active':tabSelected=='concerti'}">Concerti</a>
                             </li>
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='cv'" ng-class="{'active':tabSelected=='cv'}">CV</a>
+                                <a class="nav-link" ng-click="selectManageTab('cv')" ng-class="{'active':tabSelected=='cv'}">CV</a>
                             </li>
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='foto'" ng-class="{'active':tabSelected=='foto'}">Foto</a>
+                                <a class="nav-link" ng-click="selectManageTab('foto')" ng-class="{'active':tabSelected=='foto'}">Foto</a>
                             </li>
                             <li class="nav-item cursor">
-                                <a class="nav-link" ng-click="tabSelected='audio'" ng-class="{'active':tabSelected=='audio'}">Audio</a>
+                                <a class="nav-link" ng-click="selectManageTab('audio')" ng-class="{'active':tabSelected=='audio'}">Audio</a>
                             </li>
                         </ul>
                     </div>

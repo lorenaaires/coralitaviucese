@@ -23,6 +23,18 @@
     $scope.newCurriculum = { title: '' };
     $scope.newPhoto = { descrizione: '' };
     $scope.newAudio = { title: '' };
+    $scope.tabSelected = $scope.manageTabSelected || 'contatti';
+
+    $scope.selectManageTab = function (tab) {
+      $scope.tabSelected = tab;
+      if ($scope.setManageTab) {
+        $scope.setManageTab(tab);
+      }
+    }
+
+    $scope.initManageTab = function () {
+      $scope.tabSelected = $scope.manageTabSelected || 'contatti';
+    }
 
     $scope.tipologiaSelected = null;
     $('input[name="dates"]').daterangepicker({
