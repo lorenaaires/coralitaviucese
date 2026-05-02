@@ -396,7 +396,7 @@
     }
     $scope.addMediaPhoto = function () {
       $scope.uploadManagedAsset('photo', function (path, message) {
-        $scope.mediaPhotos.push({
+        $scope.mediaPhotos.unshift({
           descrizione: $scope.newPhoto.descrizione || '',
           url: path
         });
@@ -416,7 +416,7 @@
       }
 
       $scope.uploadManagedAsset('audio', function (path, message) {
-        $scope.mediaAudio.push({
+        $scope.mediaAudio.unshift({
           title: $scope.newAudio.title,
           path: path
         });
