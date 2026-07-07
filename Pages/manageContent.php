@@ -24,6 +24,9 @@
                             <li class="nav-item cursor">
                                 <a class="nav-link" ng-click="selectManageTab('audio')" ng-class="{'active':tabSelected=='audio'}">Audio</a>
                             </li>
+                            <li class="nav-item cursor">
+                                <a class="nav-link" ng-click="selectManageTab('cd')" ng-class="{'active':tabSelected=='cd'}">Link CD</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="box box-info" ng-show="tabSelected=='contatti'">
@@ -281,6 +284,27 @@
                         </div>
                         <div class="box-footer clearfix">
                             <button type="button" class="btn btn-primary" data-ng-click="saveMediaAudio()">SALVA AUDIO</button>
+                        </div>
+                    </div>
+                    <div class="box box-info" ng-show="tabSelected=='cd'">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Link CD</h3>
+                        </div>
+                        <div class="box-body">
+                            <div class="form-group">
+                                <label class="control-label text-left">Titolo pagina</label>
+                                <input type="text" class="form-control" data-ng-model="linkCd.title" placeholder="CD Nova Lux" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label text-left">Link esterno di destinazione</label>
+                                <input type="url" class="form-control" data-ng-model="linkCd.url" placeholder="https://..." />
+                            </div>
+                            <p class="text-left" data-ng-if="linkCd.url">
+                                Link attuale: <a target="_blank" data-ng-href="{{linkCd.url}}">{{linkCd.url}}</a>
+                            </p>
+                        </div>
+                        <div class="box-footer clearfix">
+                            <button type="button" class="btn btn-primary" data-ng-click="saveLinkCd()">SALVA LINK CD</button>
                         </div>
                     </div>
                 </div>

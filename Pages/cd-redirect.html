@@ -1,0 +1,13 @@
+<div class="section">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <img src="img/cd.png" alt="CD Specchio" style="max-width: 96px; margin-bottom: 24px;" />
+                <h2 class="title">{{redirectPages.CD.title}}</h2>
+                <p data-ng-if="redirectPages.CD.url">Ti stiamo portando alla pagina del CD.</p>
+                <p data-ng-if="!redirectPages.CD.url">Il link del CD non e' ancora configurato.</p>
+                <a data-ng-if="redirectPages.CD.url" class="btn btn-primary" data-ng-href="{{redirectPages.CD.url}}">Apri la pagina</a>
+            </div>
+        </div>
+    </div>
+</div>

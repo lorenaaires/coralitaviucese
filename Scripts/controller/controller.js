@@ -11,7 +11,7 @@ angular.module('my-app').service('globalService', function(store) {
 });
 angular.module('my-app').controller('MyController', MyController);
 
-function MyController($log, $scope, $filter, globalService, store, $compile, $location, $window, $anchorScroll, $http) {
+function MyController($log, $scope, $filter, globalService, store, $compile, $location, $window, $anchorScroll, $http, $timeout) {
     let userTemp = JSON.parse(localStorage.getItem('userConnected'));
     if(userTemp === ''){
         localStorage.removeItem('userConnected');
@@ -30,6 +30,15 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
 
     $scope.tipologiaSelected = 'Canti Popolari e di montagna';
     $scope.manageTabSelected = 'contatti';
+    $scope.redirectPages = {
+        CD: {
+            title: 'CD Nova Lux',
+            url: ''
+        }
+    };
+    var redirectPromise = null;
+    var redirectConfigLoaded = false;
+    var redirectConfigLoading = false;
 
     $scope.normalizePageName = function(pagina) {
         return (pagina || 'HOME').toUpperCase();
@@ -82,6 +91,11 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
         options = options || {};
         pagina = $scope.normalizePageName(pagina);
 
+        if (redirectPromise) {
+            $timeout.cancel(redirectPromise);
+            redirectPromise = null;
+        }
+
         if (pagina === 'MANAGE' && (!$scope.connectedUser || !$scope.connectedUser.nickname)) {
             $scope.pageSelected = 'HOME';
             localStorage.setItem('page', 'HOME');
@@ -93,7 +107,11 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
         }
 
         $scope.pageSelected = pagina;
-        localStorage.setItem('page', pagina);
+        if ($scope.redirectPages[pagina]) {
+            localStorage.setItem('page', 'HOME');
+        } else {
+            localStorage.setItem('page', pagina);
+        }
 
         if (pagina !== 'MANAGE') {
             $scope.manageTabSelected = 'contatti';
@@ -103,10 +121,75 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
             $scope.updateRouteState(pagina, pagina === 'MANAGE' ? $scope.manageTabSelected : null);
         }
 
+        if ($scope.redirectPages[pagina]) {
+            $scope.startRedirectPage(pagina);
+        }
+
         $('html').removeClass('nav-open');
         $toggle = $('.navbar-toggler');
         $toggle.removeClass('toggled');
 
+    }
+
+    $scope.loadRedirectPages = function(callback) {
+        if (redirectConfigLoading) {
+            if (callback) {
+                $timeout(callback, 200);
+            }
+            return;
+        }
+
+        redirectConfigLoading = true;
+        $.ajax({
+            url: "api/Values/LinkCd.php",
+            type: "POST",
+            dataType: "json",
+            success: function(data) {
+                if (data && data.url) {
+                    $scope.redirectPages.CD.url = data.url;
+                }
+                if (data && data.title) {
+                    $scope.redirectPages.CD.title = data.title;
+                }
+                redirectConfigLoaded = true;
+                redirectConfigLoading = false;
+                $scope.$applyAsync(function() {
+                    if (callback) {
+                        callback();
+                    }
+                });
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                redirectConfigLoaded = true;
+                redirectConfigLoading = false;
+                console.log(textStatus, errorThrown);
+                console.log(jqXHR.responseText);
+            }
+        });
+    }
+
+    $scope.startRedirectPage = function(pagina) {
+        var redirectPage = $scope.redirectPages[pagina];
+        if (!redirectPage) {
+            return;
+        }
+
+        if (!redirectConfigLoaded) {
+            $scope.loadRedirectPages(function() {
+                if ($scope.pageSelected === pagina) {
+                    $scope.startRedirectPage(pagina);
+                }
+            });
+            return;
+        }
+
+        if (!redirectPage.url) {
+            return;
+        }
+
+        redirectPromise = $timeout(function() {
+            $window.location.replace(redirectPage.url);
+        }, 0);
     }
 
     $scope.setManageTab = function(tab, options) {
@@ -184,6 +267,7 @@ function MyController($log, $scope, $filter, globalService, store, $compile, $lo
     $scope.loadCurricula();
     $scope.loadMediaPhotos();
     $scope.loadMediaAudio();
+    $scope.loadRedirectPages();
     angular.element($window).on('hashchange', function() {
         $scope.$applyAsync(function() {
             $scope.applyRouteState();

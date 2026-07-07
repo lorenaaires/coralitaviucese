@@ -113,6 +113,7 @@
         <div data-ng-if="pageSelected=='CONCERTI'" ng-include="'Pages/concerti.html'"></div>
         <div data-ng-if="pageSelected=='CONTATTI'" ng-include="'Pages/contatti.html'"></div>
         <div data-ng-controller="MyController" data-ng-if="pageSelected=='MEDIA'" ng-include="'Pages/foto.html'"></div>
+        <div data-ng-if="pageSelected=='CD'" ng-include="'Pages/cd-redirect.html'"></div>
         <div data-ng-controller="MyController" data-ng-if="pageSelected=='MANAGE'" ng-include="'Pages/manageContent.php'"></div>
 
         <footer class="footer footer-default">

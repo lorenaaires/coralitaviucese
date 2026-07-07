@@ -12,6 +12,7 @@
     $scope.curricula = [];
     $scope.mediaPhotos = [];
     $scope.mediaAudio = [];
+    $scope.linkCd = { title: 'CD Specchio', url: '' };
     $scope.hideContatti = true;
     $scope.hideRepertorio = true;
     $scope.hideConcerti = true;
@@ -265,9 +266,21 @@
         }
       });
     }
+    $scope.getLinkCd = function () {
+      $.ajax({
+        url: "api/Values/LinkCd.php",
+        type: "POST",
+        dataType: "json",
+        success: function (data) {
+          $scope.linkCd = data || { title: 'CD Specchio', url: '' };
+          $scope.$apply();
+        }
+      });
+    }
     $scope.getCurricula();
     $scope.getMediaPhotos();
     $scope.getMediaAudio();
+    $scope.getLinkCd();
     $scope.modificaConcerto = function (concerto) {
       $scope.selectedConcerto = concerto;
       $scope.selectedConcerto.data_inizio = new Date($scope.selectedConcerto.data_inizio);
@@ -346,6 +359,21 @@
             $scope.loadMediaAudio();
           }
           alert("Audio salvati con successo");
+        }
+      }, 'json');
+    }
+    $scope.saveLinkCd = function () {
+      $.post("api/Values/SaveLinkCd.php", {
+        linkCd: $scope.linkCd
+      }, function (response) {
+        if (response == 1) {
+          $scope.getLinkCd();
+          if ($scope.loadRedirectPages) {
+            $scope.loadRedirectPages();
+          }
+          alert("Link CD salvato con successo");
+        } else {
+          alert("Inserisci un link esterno valido, completo di http:// o https://");
         }
       }, 'json');
     }
